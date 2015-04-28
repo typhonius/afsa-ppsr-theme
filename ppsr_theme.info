@@ -11,7 +11,7 @@
 ; The name, description and screenshot used for this theme on the Appearance
 ; page at admin/appearance.
 
-screenshot  = screenshot.png
+; screenshot  = screenshot.png
 name        = PPSR Theme
 description = Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 
