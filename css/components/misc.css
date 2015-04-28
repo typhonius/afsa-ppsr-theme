@@ -442,6 +442,52 @@ span.field-label {
   margin-bottom: 1.5em;
 }
 
+/* Block PPSR links. */
+#block-block-6 {
+ max-width: 250px; float: right;
+}
+.block div.login-ppsr, .block div.search-ppsr {
+  float: right;
+  clear: right;
+  margin: .3em;
+  padding: .5em 1em;
+  min-width: 174px;
+  text-align: right;
+}
+.block div.login-ppsr {
+  background: url("../../images/lock-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
+}
+.block div.search-ppsr {
+  background: url("../../images/search-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
+}
+.block .login-ppsr a, .block .search-ppsr a {
+  cursor: pointer; 
+  color:#ffffff;
+  text-decoration: none;
+}
+.block .login-ppsr:focus, .block .login-ppsr:hover, .block .search-ppsr:focus, .block .search-ppsr:hover { 
+  background-color: #036C7C;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Block search header. */
+#block-search-api-page-default-search {
+  float:right;
+  min-width: 224px;
+}
+#edit-keys-1 {
+  min-width: 180px;
+  float:left;
+}
+#edit-submit-1 {
+  text-indent: -100px;
+  width: 32px;
+  font-weight: bold;
+  height: 25px;
+  border: none;
+  background: url("../../images/search-icon-44.png") no-repeat scroll center center / 16px auto #006A72;
+}
 /**
  * Menus.
  */
