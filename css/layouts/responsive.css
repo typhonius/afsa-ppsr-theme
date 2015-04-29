@@ -22,9 +22,10 @@
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-#header,
-#content,
-#navigation,
+#header {
+  background: #ffffff url('../../images/header-bkg.png') no-repeat scroll right top;
+}
+#header, #content, #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
