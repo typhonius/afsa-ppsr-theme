@@ -130,6 +130,18 @@
   /* Clear the logo. */
   clear: both;
 }
+/* The footer */
+#footer {
+  background: url("../../images/footer-bkg.png") no-repeat scroll right bottom #333;
+  color: #FFFFFF;
+}
+#footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#footer a:hover, #footer a:focus {
+  text-decoration: underline;
+}
 
 /**
  * Navigation bar.
