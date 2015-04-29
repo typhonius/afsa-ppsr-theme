@@ -446,28 +446,31 @@ span.field-label {
 #block-block-6 {
  max-width: 250px; float: right;
 }
-#block-block-6 a[href*="ppsr/Login"] {
+.region-header a[href*="ppsr/Login"] {
   background: url("../../images/lock-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
 }
-#block-block-6 a[href*="ppsr/SearchLanding"] {
+.region-header a[href*="ppsr/SearchLanding"] {
   background: url("../../images/search-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
 }
-#block-block-6 p a {
-  cursor: pointer; 
-  color:#ffffff;
-  text-decoration: none;
-  display:block;
-  float: right;
-  clear: right;
-  margin: .3em;
-  padding: .5em 1em;
-  min-width: 174px;
-  text-align: right;
+.region-header a[href*="ppsr/Login"],
+.region-header a[href*="ppsr/SearchLanding"] {
+ cursor: pointer;
+ color: #ffffff;
+ text-decoration: none;
+ display: block;
+ float: right;
+ clear: right;
+ margin: 0 .3em .3em;
+ padding: .5em 1em;
+ min-width: 174px;
+ text-align: right;
 }
-#block-block-6 p a:focus, #block-block-6 p a:hover {
-  background-color: #036C7C;
-  text-decoration: underline;
-  color: #ffffff;
+.region-header a[href*="ppsr/SearchLanding"]:focus,
+.region-header a[href*="ppsr/SearchLanding"]:hover,
+.region-header a[href*="ppsr/Login"]:focus,
+.region-header a[href*="ppsr/Login"]:hover {
+ background-color: #15505F;
+ text-decoration: underline;
 }
 
 /* Block search header. */
