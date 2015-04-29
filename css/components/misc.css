@@ -134,6 +134,7 @@
 #footer {
   background: url("../../images/footer-bkg.png") no-repeat scroll right bottom #333;
   color: #FFFFFF;
+  padding-bottom: .5em;
 }
 #footer a {
   color: #FFFFFF;
@@ -142,7 +143,29 @@
 #footer a:hover, #footer a:focus {
   text-decoration: underline;
 }
-
+/* The footer menu items */
+.region-footer .block-menu .menu {
+  margin: 0 0 2em;
+  padding: 0;
+  display: inline;
+  list-style-type: none;
+}
+.region-footer .block-menu .menu > li {
+  float:left;
+  position: relative;
+  display: inline-block;
+}
+.region-footer .block-menu .menu li:first-child a {
+  padding-left: 0;
+  border: none;
+}
+.region-footer .block-menu .menu > li > a {
+  padding: 0.2em 0.7em;
+  border-left: 1px solid #FFFFFF;
+}
+.region-footer .block-menu ul.menu {
+  list-style: outside none none;
+}
 /**
  * Navigation bar.
  */
