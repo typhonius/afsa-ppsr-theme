@@ -180,7 +180,7 @@
 .block__title,         /* Block title. */
 .comments__title,      /* Comment section heading. */
 .comments__form-title, /* Comment form heading. */
-.comment__title {      /* Comment title. */
+.comment__title {     /* Comment title. */
   margin: 0;
 }
 
@@ -423,7 +423,7 @@ span.field-label {
 .pager-next,     /* The next page's list item. */
 .pager-last,     /* The last page's list item. */
 .pager-ellipsis, /* A concatenation of several list items using an ellipsis. */
-.pager-current { /* The current page's list item. */
+.pager-current {/* The current page's list item. */
   display: inline;
   padding: 0 0.5em;
   list-style-type: none;
@@ -446,7 +446,17 @@ span.field-label {
 #block-block-6 {
  max-width: 250px; float: right;
 }
-.block div.login-ppsr, .block div.search-ppsr {
+#block-block-6 a[href*="ppsr/Login"] {
+  background: url("../../images/lock-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
+}
+#block-block-6 a[href*="ppsr/SearchLanding"] {
+  background: url("../../images/search-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
+}
+#block-block-6 p a {
+  cursor: pointer; 
+  color:#ffffff;
+  text-decoration: none;
+  display:block;
   float: right;
   clear: right;
   margin: .3em;
@@ -454,18 +464,7 @@ span.field-label {
   min-width: 174px;
   text-align: right;
 }
-.block div.login-ppsr {
-  background: url("../../images/lock-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
-}
-.block div.search-ppsr {
-  background: url("../../images/search-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
-}
-.block .login-ppsr a, .block .search-ppsr a {
-  cursor: pointer; 
-  color:#ffffff;
-  text-decoration: none;
-}
-.block .login-ppsr:focus, .block .login-ppsr:hover, .block .search-ppsr:focus, .block .search-ppsr:hover { 
+#block-block-6 p a:focus, #block-block-6 p a:hover {
   background-color: #036C7C;
   text-decoration: underline;
   color: #ffffff;
