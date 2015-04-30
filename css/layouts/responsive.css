@@ -66,7 +66,7 @@
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  #main {
+  #main, #content {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
@@ -74,12 +74,43 @@
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
+    background: url("../../images/gl-nav.gif") repeat-x scroll left top #006171;
+    overflow-y: scroll;
     top: 0;
-    height: 3em;
+    height: 5em;
     width: 100%;
+  }
+  #navigation .links li,
+  #navigation .menu li {
+    border-right: 1px solid #266573;
+    padding: 2em 1em; /* LTR */; /* LTR */
+  }
+  #navigation .menuparent > ul {
+    margin-top: 2.5em;
+  }
+  #navigation .links li > ul li,
+  #navigation .menu li > ul li {
+    padding: 1em;
   }
 }
 
+@media only screen and (max-width: 479px) {
+  #navigation {
+    position: fixed;
+    top: 0;
+    overflow: hidden; 
+    background-color: #006171;
+    height: 2em;
+  }
+  #navigation .links li,
+  #navigation .menu li {
+    display: list-item;
+    padding: 0; /* LTR */; /* LTR */
+  }
+  #navigation .menu a {
+    
+  }
+}
 /**
  * Use 3 grid columns for smaller screens.
  */
