@@ -139,6 +139,9 @@
 #footer a {
   color: #FFFFFF;
 }
+.region-footer .block {
+  float: left;
+}
 /* The footer menu items */
 .region-footer .block-menu .menu {
   margin: 0 0 2em 0;
