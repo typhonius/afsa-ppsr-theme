@@ -186,6 +186,15 @@ li.active-trail .sf-no-children {
 #navigation .menu a:focus {
   text-decoration: underline;
 }
+#navigation .links a[href$="need-help"],
+#navigation .menu a[href$="need-help"] {
+  /* Need help icon display */
+  background: url("../../images/qn-icon.png") no-repeat scroll right center / 20px auto transparent;
+  padding-right: 2em;
+  padding-top: .3em;
+  margin-top: -.3em;
+}
+
 /**
  * Breadcrumb navigation.
  */
