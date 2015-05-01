@@ -65,8 +65,8 @@
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  #main {
+@media all and (min-width: 800px) {
+  #main, #content {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
@@ -74,12 +74,77 @@
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
+    background: url("../../images/gl-nav.gif") repeat-x scroll left top #006171;
     top: 0;
-    height: 3em;
+    height: 5em;
     width: 100%;
+  }
+  #navigation .links li,
+  #navigation .menu li {
+    border-right: 1px solid #266573;
+    padding: 2em 1em; /* LTR */; /* LTR */
+  }
+  #navigation .menuparent > ul {
+    margin-top: 2.5em;
+  }
+  #navigation .links li > ul li,
+  #navigation .menu li > ul li {
+    padding: 1em;
+    border: none;
+    background-color: #006171;
   }
 }
 
+@media only screen and (max-width: 799px) {
+  #navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #006171;
+    height: 2em;
+  }
+  #navigation .links li,
+  #navigation .menu li {
+    float: left;
+    clear: left;
+    overflow: visible;
+    background-color: #004652;
+    min-width: 8em;
+    padding: .5em;
+  }
+  .region-navigation {
+    position: relative;
+    padding-left: 1em;
+  }
+  .region-navigation::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double #FFFFFF;
+    border-bottom: 0.125em solid #FFFFFF;
+  }
+  #navigation .block-superfish {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 3em;
+    padding-top:  2em;
+    height: 0;
+    overflow: hidden;
+  }
+  #navigation .block-superfish:hover,
+  #navigation .block-superfish:focus {
+    cursor: pointer;
+    overflow: visible;
+  }
+  #navigation .links li > ul li,
+  #navigation .menu li > ul li {
+    display: none;
+  }
+}
 /**
  * Use 3 grid columns for smaller screens.
  */
