@@ -139,9 +139,6 @@
 #footer a {
   color: #FFFFFF;
 }
-.region-footer .block {
-  float: left;
-}
 /* The footer menu items */
 .region-footer .block-menu .menu {
   margin: 0 0 2em 0;
@@ -161,6 +158,9 @@
 .region-footer .block-menu .menu li a {
   padding: 0.2em 0.7em;
   border-left: 1px solid #FFFFFF;
+}
+.region-footer .block em {
+  font-family: Georgia, Times, Time New Roman, serif;
 }
 
 /**

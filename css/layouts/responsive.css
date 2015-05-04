@@ -80,58 +80,28 @@
   }
 }
 
-/* Footer ABN and Tagline */
+/* Footer region */
 @media all and (min-width: 580px) {
-  /* The footer abn and tagline */
-  .region-footer .block {
-    width: 50%;
+  .region-footer .block:nth-child(odd) {
+    width: 66%;
+    float: left;
+    clear: left;
   }
-  .region-footer .menu::after {
-    position: relative;
+   .region-footer .block:nth-child(even) {
+    width: 33%;
+    float: right;
+    clear: right;
+    text-align: right;
+  } 
+}
+@media all and (max-width: 579px) {
+  .region-footer .block {
+    width: 100%;
     float: left;
     clear: both;
-    display: block;
-    content: "ABN 63 384 330 717";
-  }
-  .region-footer div.last::after {
-    position: absolute;
-    right: 4%;
-    margin-top: 2em;
-    text-align: right;
-    font-family: Georgia, Times, Times New Roman, serif;
-    font-style: italic;
-    font-size: 110%;
-    width: 30%;
-    content: "Financial outcomes for consumers, business and the community.";
   }
 }
 
-@media all and (max-width: 579px) {
-  /* The footer abn and tagline */
-  .region-footer .block {
-    width: 100%;
-    float: left;
-    clear: both;
-  }
-  .region-footer .menu::after {
-    position: relative;
-    float: left;
-    clear: both;
-    display: block;
-    margin-top: 2em;
-    content: "ABN 63 384 330 717";
-  }
-  .region-footer div.last::after {
-    position: relative;
-    float: right;
-    clear: both;
-    width: 100%;
-    font-family: Georgia, Times, Times New Roman, serif;
-    font-style: italic;
-    font-size: 110%;
-    content: "Financial outcomes for consumers, business and the community.";
-  }
-}
 /**
  * Use 3 grid columns for smaller screens.
  */
