@@ -139,6 +139,9 @@
 #footer a {
   color: #FFFFFF;
 }
+#footer a:hover, #footer a:focus {
+  background-color: #000000;
+}
 /* The footer menu items */
 .region-footer .block-menu .menu {
   margin: 0 0 2em 0;
@@ -158,6 +161,17 @@
 .region-footer .block-menu .menu li a {
   padding: 0.2em 0.7em;
   border-left: 1px solid #FFFFFF;
+}
+/* The footer social media items */
+.region-footer .block a[href$="user/AFSAGovAu"] {
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-indent: -100px;
+  background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
+}
+.region-footer .block em {
+  font-family: Georgia, Times, Time New Roman, serif;
 }
 
 /**

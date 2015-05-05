@@ -145,6 +145,29 @@
     display: none;
   }
 }
+
+/* Footer region */
+@media all and (min-width: 580px) {
+  .region-footer .block:nth-child(odd) {
+    width: 66%;
+    float: left;
+    clear: left;
+  }
+   .region-footer .block:nth-child(even) {
+    width: 33%;
+    float: right;
+    clear: right;
+    text-align: right;
+  } 
+}
+@media all and (max-width: 579px) {
+  .region-footer .block {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */
@@ -350,6 +373,7 @@
     clear: right;
   }
 }
+
 @media all and (max-width: 479px) {
   .panel-col-bottom .panel-pane {
     width: 100%
