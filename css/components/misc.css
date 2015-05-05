@@ -170,6 +170,9 @@
   text-indent: -100px;
   background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
 }
+.region-footer .block em {
+  font-family: Georgia, Times, Time New Roman, serif;
+}
 
 /**
  * Navigation bar.
