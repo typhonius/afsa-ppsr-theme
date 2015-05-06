@@ -96,6 +96,12 @@
 }
 
 @media only screen and (max-width: 799px) {
+  #header {
+    margin-top: 2em;
+  }
+  .header__logo, .header__logo img {
+    width: 100%;
+  }
   #navigation {
     position: fixed;
     top: 0;
