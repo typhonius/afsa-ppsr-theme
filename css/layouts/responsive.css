@@ -89,9 +89,15 @@
   }
   #navigation .links li > ul li,
   #navigation .menu li > ul li {
-    padding: 1em;
+    padding: .5em 1em;
     border: none;
     background-color: #006171;
+  }
+  #navigation .links li > ul li:hover,
+  #navigation .menu li > ul li:hover,
+  #navigation .links li > ul li:focus,
+  #navigation .menu li > ul li:focus {
+    background-color: #004752;
   }
 }
 
