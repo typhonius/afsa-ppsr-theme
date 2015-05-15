@@ -915,3 +915,36 @@ tr.selected td {
   background-color: #0072b9;
   background-image: url('../../images/progress.gif');
 }
+
+/* Slideshow */
+.rs-slideshow {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rs-slideshow li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rs-slideshow li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rs-slideshow img {
+  display: block;
+  border: 0;
+  height: auto;
+  float: left;
+  width: 100%;
+}
