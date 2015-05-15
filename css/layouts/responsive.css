@@ -379,20 +379,19 @@
  * Bottom panel of three column staked 33/34/33.
  */
 @media all and (min-width: 480px) {
-  .panel-col-bottom .panel-pane:nth-child(odd) {
+  .front .panel-col-bottom .panel-pane:nth-child(odd) {
     width:66.6%;
     float: left;
     clear: left;
   }
-  .panel-col-bottom .panel-pane:nth-child(even) {
+  .front .panel-col-bottom .panel-pane:nth-child(even) {
     width:33.3%;
     float: right;
     clear: right;
   }
 }
-
 @media all and (max-width: 479px) {
-  .panel-col-bottom .panel-pane {
+  .front .panel-col-bottom .panel-pane {
     width: 100%
   }
 }
