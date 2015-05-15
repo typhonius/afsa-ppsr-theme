@@ -14,17 +14,13 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-  Drupal.behaviors.responsiveSlides = {
-    attach: function(context, settings) {
+Drupal.behaviors.my_custom_behavior = {
+  attach: function(context, settings) {
 
-      $(".rs-slideshow").responsiveSlides({
-        "auto": true,
-        "pager": true,         // Boolean: Show pager, true or false
-        "pauseButton": true   // Boolean: Create Pause Button
-      });
+    // Place your code here.
 
-    }
-  };
+  }
+};
 
 
 })(jQuery, Drupal, this, this.document);

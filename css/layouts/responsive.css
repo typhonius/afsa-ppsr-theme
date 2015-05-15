@@ -89,29 +89,13 @@
   }
   #navigation .links li > ul li,
   #navigation .menu li > ul li {
-    padding: .5em 1em;
+    padding: 1em;
     border: none;
-    background-color: #125361;
-  }
-  #navigation .links li > ul li:hover,
-  #navigation .menu li > ul li:hover,
-  #navigation .links li > ul li:focus,
-  #navigation .menu li > ul li:focus {
-    background-color: #004752;
+    background-color: #006171;
   }
 }
 
 @media only screen and (max-width: 799px) {
-  /* Style left navigation layout */
-  .sidebar-first .block-menu-block {
-    margin-top: 0;
-  }
-  #header {
-    margin-top: 2em;
-  }
-  .header__logo, .header__logo img {
-    width: 100%;
-  }
   #navigation {
     position: fixed;
     top: 0;
@@ -161,34 +145,11 @@
     display: none;
   }
 }
-
-/* Footer region */
-@media all and (min-width: 580px) {
-  .region-footer .block:nth-child(odd) {
-    width: 66%;
-    float: left;
-    clear: left;
-  }
-   .region-footer .block:nth-child(even) {
-    width: 33%;
-    float: right;
-    clear: right;
-    text-align: right;
-  } 
-}
-@media all and (max-width: 579px) {
-  .region-footer .block {
-    width: 100%;
-    float: left;
-    clear: both;
-  }
-}
-
 /**
  * Use 3 grid columns for smaller screens.
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
-  
+
   /**
    * The layout when there is only one sidebar, the left one.
    */
@@ -313,18 +274,17 @@
   /* Span 4 columns, starting in 2nd column from left. */
   .sidebar-first #content {
     float: left;
-    width: 75%;
-    margin-left: 25%;
+    width: 80%;
+    margin-left: 20%;
     margin-right: -100%;
   }
 
   /* Span 1 column, starting in 1st column from left. */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 25%;
-    margin-left: -0.5em;
-    margin-right: -25%;
-    margin-top: 2em;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
   }
 
   /**
@@ -390,7 +350,6 @@
     clear: right;
   }
 }
-
 @media all and (max-width: 479px) {
   .front .panel-col-bottom .panel-pane {
     width: 100%

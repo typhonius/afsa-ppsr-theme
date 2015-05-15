@@ -139,9 +139,6 @@
 #footer a {
   color: #FFFFFF;
 }
-#footer a:hover, #footer a:focus {
-  background-color: #000000;
-}
 /* The footer menu items */
 .region-footer .block-menu .menu {
   margin: 0 0 2em 0;
@@ -161,17 +158,6 @@
 .region-footer .block-menu .menu li a {
   padding: 0.2em 0.7em;
   border-left: 1px solid #FFFFFF;
-}
-/* The footer social media items */
-.region-footer .block a[href$="user/AFSAGovAu"] {
-  display: block;
-  width: 44px;
-  height: 44px;
-  text-indent: -100px;
-  background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
-}
-.region-footer .block em {
-  font-family: Georgia, Times, Time New Roman, serif;
 }
 
 /**
@@ -204,7 +190,7 @@
 #navigation .links li.active-trail,
 #navigation .menu li.active-trail,
 li.active-trail .sf-no-children {
-  background-color: #38424D;
+  background-color: #006171;
 }
 #navigation .links a,
 #navigation .menu a {
@@ -245,7 +231,7 @@ li.active-trail .sf-no-children {
  */
 .page__title,          /* The title of the page. */
 .node__title,          /* Title of a piece of content when it is given in a list of content. */
-/*.block__title,          Block title. */
+.block__title,         /* Block title. */
 .comments__title,      /* Comment section heading. */
 .comments__form-title, /* Comment form heading. */
 .comment__title {     /* Comment title. */
@@ -546,83 +532,40 @@ span.field-label {
   float:right;
   min-width: 224px;
 }
-.search-form .form-text, .search-form-widget .form-text {
+#edit-keys-1 {
   min-width: 180px;
   float:left;
-  height: 26px;
 }
-.search-form .form-submit, .search-form-widget .form-submit {
+#edit-submit-1 {
   text-indent: -100px;
   width: 32px;
-  height: 26px;
+  font-weight: bold;
+  height: 25px;
   border: none;
   background: url("../../images/search-icon-44.png") no-repeat scroll center center / 16px auto #006A72;
 }
 /**
  * Menus.
  */
-   /* Style left navigation layout */
-.sidebar-first .block-menu-block a {
-  color: #FFFFFF;
-  padding-left: 1em;
-  display: block;
+.menu__item.is-leaf {
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
+  *list-style-image: url('../../images/menu-leaf.png');
+  list-style-type: square;
 }
-.sidebar-first .block-menu-block h2 {
-
+.menu__item.is-expanded {
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
+  *list-style-image: url('../../images/menu-expanded.png');
+  list-style-type: circle;
 }
-.sidebar-first .block-menu-block .menu-block-wrapper {
-  background: url("../../images/header-bkg.png") no-repeat scroll 5% 110% #EAF0F3;
-  padding-bottom: 10em;
-}
-.sidebar-first .block-menu-block .menu__item {
-  border-bottom: 1px solid #EAF0F3;
-  padding: 1em 0 1em 0;
-}
-.sidebar-first .block-menu-block .menu {
-  margin-top: 1em;
-  margin-bottom: -1em;
-  padding-left: 0;
-}
-.menu__item a {
-  text-decoration: none;
-  padding-right: 0.5em;
-}
-.menu__item a:hover, 
-.menu__item a:focus {
-  text-decoration: underline;
-}
-.sidebar-first .block-menu-block .menu__item.is-leaf.last {
-  margin-bottom: -1em;
-}
-.sidebar-first .block-menu-block .menu__item.is-leaf {
-  background-color: #4E545E;
-}
-.sidebar-first .block-menu-block ul.menu ul.menu {
-  margin-left: -4em;
-  padding-left: 4em;
-}
-.sidebar-first .block-menu-block ul.menu ul.menu .menu__item.is-collapsed {
-  background-color: #4E545E;
-  background-image: none;
-}
-.sidebar-first .block-menu-block .menu__item.is-active {
-  background-color: #EAF0F3 !important;
-}
-.sidebar-first .block-menu-block .menu__item a.active {
-  color: #000000;
-}
-.sidebar-first .block-menu-block .menu__item.is-expanded {
-  list-style: none outside none;
-  background: url("../../images/chevron-down.png") no-repeat scroll 96% 1.3em #343942;
-}
-.sidebar-first .block-menu-block .menu__item.is-collapsed {
-  list-style: none outside none;
-  background: url("../../images/chevron-right.png") no-repeat scroll 96% center #125361;
-}
-.menu__item.is-leaf,
-.menu__item.is-expanded,
 .menu__item.is-collapsed {
-  list-style: none outside none;
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC'); /* LTR */
+  *list-style-image: url('../../images/menu-collapsed.png'); /* LTR */
+  list-style-type: disc;
+}
+
+/* The active item in a Drupal menu. */
+.menu a.active {
+  color: #000;
 }
 
 /**
@@ -699,7 +642,7 @@ span.field-label {
 
 /* Wrapper for a form element (or group of form elements) and its label. */
 .form-item {
-  margin: 0;
+  margin: 1.5em 0;
 }
 
 /* Pack groups of checkboxes and radio buttons closer together. */
@@ -914,37 +857,4 @@ tr.selected td {
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../../images/progress.gif');
-}
-
-/* Slideshow */
-.rs-slideshow {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.rs-slideshow li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.rs-slideshow li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-}
-
-.rs-slideshow img {
-  display: block;
-  border: 0;
-  height: auto;
-  float: left;
-  width: 100%;
 }
