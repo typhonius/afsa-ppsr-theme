@@ -89,13 +89,25 @@
   }
   #navigation .links li > ul li,
   #navigation .menu li > ul li {
-    padding: 1em;
+    padding: .5em 1em;
     border: none;
     background-color: #006171;
+  }
+  #navigation .links li > ul li:hover,
+  #navigation .menu li > ul li:hover,
+  #navigation .links li > ul li:focus,
+  #navigation .menu li > ul li:focus {
+    background-color: #004752;
   }
 }
 
 @media only screen and (max-width: 799px) {
+  #header {
+    margin-top: 2em;
+  }
+  .header__logo, .header__logo img {
+    width: 100%;
+  }
   #navigation {
     position: fixed;
     top: 0;
@@ -145,6 +157,29 @@
     display: none;
   }
 }
+
+/* Footer region */
+@media all and (min-width: 580px) {
+  .region-footer .block:nth-child(odd) {
+    width: 66%;
+    float: left;
+    clear: left;
+  }
+   .region-footer .block:nth-child(even) {
+    width: 33%;
+    float: right;
+    clear: right;
+    text-align: right;
+  } 
+}
+@media all and (max-width: 579px) {
+  .region-footer .block {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */
@@ -339,19 +374,20 @@
  * Bottom panel of three column staked 33/34/33.
  */
 @media all and (min-width: 480px) {
-  .front .panel-col-bottom .panel-pane:nth-child(odd) {
+  .panel-col-bottom .panel-pane:nth-child(odd) {
     width:66.6%;
     float: left;
     clear: left;
   }
-  .front .panel-col-bottom .panel-pane:nth-child(even) {
+  .panel-col-bottom .panel-pane:nth-child(even) {
     width:33.3%;
     float: right;
     clear: right;
   }
 }
+
 @media all and (max-width: 479px) {
-  .front .panel-col-bottom .panel-pane {
+  .panel-col-bottom .panel-pane {
     width: 100%
   }
 }

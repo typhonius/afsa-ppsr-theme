@@ -139,6 +139,9 @@
 #footer a {
   color: #FFFFFF;
 }
+#footer a:hover, #footer a:focus {
+  background-color: #000000;
+}
 /* The footer menu items */
 .region-footer .block-menu .menu {
   margin: 0 0 2em 0;
@@ -158,6 +161,17 @@
 .region-footer .block-menu .menu li a {
   padding: 0.2em 0.7em;
   border-left: 1px solid #FFFFFF;
+}
+/* The footer social media items */
+.region-footer .block a[href$="user/AFSAGovAu"] {
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-indent: -100px;
+  background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
+}
+.region-footer .block em {
+  font-family: Georgia, Times, Time New Roman, serif;
 }
 
 /**
@@ -532,15 +546,15 @@ span.field-label {
   float:right;
   min-width: 224px;
 }
-#edit-keys-1 {
+.search-form .form-text, .search-form-widget .form-text {
   min-width: 180px;
   float:left;
+  height: 26px;
 }
-#edit-submit-1 {
+.search-form .form-submit, .search-form-widget .form-submit {
   text-indent: -100px;
   width: 32px;
-  font-weight: bold;
-  height: 25px;
+  height: 26px;
   border: none;
   background: url("../../images/search-icon-44.png") no-repeat scroll center center / 16px auto #006A72;
 }
@@ -642,7 +656,7 @@ span.field-label {
 
 /* Wrapper for a form element (or group of form elements) and its label. */
 .form-item {
-  margin: 1.5em 0;
+  margin: 0;
 }
 
 /* Pack groups of checkboxes and radio buttons closer together. */
@@ -857,4 +871,37 @@ tr.selected td {
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../../images/progress.gif');
+}
+
+/* Slideshow */
+.rs-slideshow {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rs-slideshow li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rs-slideshow li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rs-slideshow img {
+  display: block;
+  border: 0;
+  height: auto;
+  float: left;
+  width: 100%;
 }
