@@ -562,6 +562,9 @@ span.field-label {
  * Menus.
  */
    /* Style left navigation layout */
+.sidebars {
+  margin-top: 2em;
+}
 .sidebar-first .block-menu-block a {
   color: #FFFFFF;
   padding-left: 1em;
