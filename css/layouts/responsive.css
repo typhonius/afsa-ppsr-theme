@@ -99,6 +99,16 @@
   #navigation .menu li > ul li:focus {
     background-color: #004752;
   }
+  #navigation .links a[href="/"], 
+  #navigation .menu a[href="/"] {
+  /* Home icon display */
+  background: url("../../images/home.png") no-repeat scroll center center / 20px auto transparent;
+  width: 2em;
+  height: 1.3em;
+  display: block;
+  text-indent: -1000px;
+  margin-top: -.3em;
+}
 }
 
 @media only screen and (max-width: 799px) {
