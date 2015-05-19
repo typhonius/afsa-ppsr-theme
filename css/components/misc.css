@@ -142,6 +142,9 @@
 #footer a:hover, #footer a:focus {
   background-color: #000000;
 }
+#footer a:hover, #footer a:focus {
+  background-color: #000000;
+}
 /* The footer menu items */
 .region-footer .block-menu .menu {
   margin: 0 0 2em 0;
@@ -215,7 +218,7 @@
 #navigation .links li.active-trail,
 #navigation .menu li.active-trail,
 li.active-trail .sf-no-children {
-  background-color: #006171;
+  background-color: #38424D;
 }
 #navigation .links a,
 #navigation .menu a {
@@ -256,7 +259,7 @@ li.active-trail .sf-no-children {
  */
 .page__title,          /* The title of the page. */
 .node__title,          /* Title of a piece of content when it is given in a list of content. */
-.block__title,         /* Block title. */
+/*.block__title,          Block title. */
 .comments__title,      /* Comment section heading. */
 .comments__form-title, /* Comment form heading. */
 .comment__title {     /* Comment title. */
