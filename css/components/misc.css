@@ -938,6 +938,12 @@ tr.selected td {
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #008000;
+}
+
+.rs-slideshow a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .rs-slideshow li {
@@ -958,7 +964,5 @@ tr.selected td {
 .rs-slideshow img {
   display: block;
   border: 0;
-  height: auto;
-  float: left;
-  width: 100%;
+  float: right;
 }
