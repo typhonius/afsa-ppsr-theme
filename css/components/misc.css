@@ -939,7 +939,7 @@ tr.selected td {
   height: 20em;
   padding: 0;
   margin: 0 0 1em .5em;
-  background: url("../../images/footer-bkg.png") no-repeat scroll right top #008000;
+  background: url("../../images/slide-bkg.jpg") no-repeat scroll right bottom #008000;
   color: #FFFFFF;
 }
 .rslides_tabs {
@@ -956,14 +956,16 @@ tr.selected td {
 .rslides_tabs a {
   float: left;
   display: block;
-  background-color: #EAEAEA;
+  color: #FFFFFF;
+  font-size: 1em;
+  background-color: #005D5D;
   opacity: 0.5;
   text-align: center;
-  min-width: 1.8em;
+  min-width: 1.4em;
   margin-right: .5em;
 }
 .rslides_tabs li.rslides_here a {
-  background-color: #FFFFFF;
+  background-color: #007676;
   opacity: 1;
 }
 .rslides_tabs a.pause {
@@ -972,6 +974,8 @@ tr.selected td {
 .rs-slideshow a {
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .rs-slideshow a:hover, .rs-slideshow a:focus,
 .rslides_tabs a:hover, .rslides_tabs a:focus  {
