@@ -384,7 +384,7 @@
 /**
  * Bottom panel of three column staked 33/34/33.
  */
-@media all and (min-width: 480px) {
+@media all and (min-width: 800px) {
   .front.logged-in .panel-col-bottom .panels-ipe-sort-container .panels-ipe-portlet-wrapper:nth-child(odd),
   .front.not-logged-in .panel-col-bottom .panel-pane:nth-child(odd) {
     width:66.6%;
@@ -399,9 +399,18 @@
     clear: right;
     position: relative;
   }
+  .rs-slideshow .field-name-field-read-more a {
+    position: relative;
+    padding: 1em 6em 1em 1em;
+  }
 }
-@media all and (max-width: 479px) {
-  .front .panel-col-bottom .panel-pane {
+@media all and (max-width: 799px) {
+  .front.logged-in .panel-col-bottom .panels-ipe-sort-container .panels-ipe-portlet-wrapper,
+  .front.not-logged-in .panel-col-bottom .panel-pane {
     width: 100%
+  }
+  .rs-slideshow .field-name-field-read-more a {
+    position: relative;
+    padding: 4em 7em 0 3em;
   }
 }
