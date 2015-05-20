@@ -390,12 +390,14 @@
     width:66.6%;
     float: left;
     clear: left;
+    position: relative;
   }
   .front.logged-in .panel-col-bottom .panels-ipe-sort-container .panels-ipe-portlet-wrapper:nth-child(even),
   .front.not-logged-in .panel-col-bottom .panel-pane:nth-child(even) {
     width:33.3%;
     float: right;
     clear: right;
+    position: relative;
   }
 }
 @media all and (max-width: 479px) {
