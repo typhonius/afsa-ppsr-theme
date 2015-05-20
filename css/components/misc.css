@@ -999,11 +999,17 @@ tr.selected td {
   right: 0;
   bottom: 0;
 }
-.field-name-title, 
-.field-name-body, 
-.field-name-field-read-more,
-.field-name-node-link {
+.rs-slideshow .field-name-title, 
+.rs-slideshow .field-name-body, 
+.rs-slideshow .field-name-field-read-more,
+.rs-slideshow .field-name-node-link {
   z-index: 10;
   position: absolute;
   padding: 1em;
+}
+/* Adjust log in view for slideshow */
+.front.logged-in .field-name-field-slide-image .field-item {
+  height: 20em;
+  position: absolute;
+  width: 100%;
 }
