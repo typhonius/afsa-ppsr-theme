@@ -1019,6 +1019,7 @@ tr.selected td {
   display: block;
   height: 18em;
   text-shadow: 1px 1px 5px #000000;
+  z-index: 10;
 }
 /* Adjust log in view for slideshow */
 .front.logged-in .field-name-field-slide-image .field-item {
