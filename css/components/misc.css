@@ -178,11 +178,13 @@
 }
 /* The footer social media items */
 .region-footer .block a[href$="user/AFSAGovAu"] {
-  display: block;
+  display: inline-block;
   width: 44px;
   height: 44px;
-  text-indent: -100px;
+  text-indent: 1000px;
   background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .region-footer .block em {
   font-family: Georgia, Times, Time New Roman, serif;
@@ -192,8 +194,7 @@
  * Navigation bar.
  */
 #navigation {
-  /* Sometimes you want to prevent overlapping with main div. */
-  /* overflow: hidden; */
+  z-index: 100;
 }
 #navigation .block {
   margin-bottom: 0;
@@ -949,9 +950,7 @@ tr.selected td {
   position: absolute;
   margin-top: -4em;
   margin-left: 1em;
-}
-.rslides_tabs a {
-  text-decoration: none;
+  z-index: 30;
 }
 .rslides_tabs a {
   float: left;
@@ -961,15 +960,24 @@ tr.selected td {
   background-color: #005D5D;
   opacity: 0.5;
   text-align: center;
+  text-decoration: none;
   min-width: 1.4em;
   margin-right: .5em;
 }
+.rslides_tabs a:hover,
+.rslides_tabs a:focus,
 .rslides_tabs li.rslides_here a {
   background-color: #007676;
   opacity: 1;
 }
 .rslides_tabs a.pause {
-  background: none;
+  text-indent: -1000px;
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../../images/featured-articles-pause.png") no-repeat scroll center top #007676;
+}
+.rslides_tabs a.paused {
+  background: url("../../images/featured-articles-play.png") no-repeat scroll center top #007676;
 }
 .rs-slideshow a {
   color: #FFFFFF;
@@ -999,7 +1007,6 @@ tr.selected td {
   display: block;
   border: 0px none;
   position: absolute;
-  margin: 1em;
   right: 0;
   bottom: 0;
 }
