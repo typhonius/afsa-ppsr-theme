@@ -1063,9 +1063,14 @@ tr.selected td {
   .front .pane-professionals a:focus, .front .pane-latest-news a:focus {
     text-decoration: underline;
   }
-  .front .center-wrapper .panel-col .pane-block a,
-  .front .center-wrapper .panel-col-last .pane-block a {
+  .front .center-wrapper .panel-col .pane-block li:first-child a,
+  .front .center-wrapper .panel-col-last .pane-block li:first-child a {
     color: #333333;
+    text-decoration: none;
+  }
+  .front .center-wrapper .panel-col .pane-block li a,
+  .front .center-wrapper .panel-col-last .pane-block li a{    
+    color: #FFFFFF;
     text-decoration: none;
   }
   .front .center-wrapper .panel-col .pane-block {
@@ -1088,12 +1093,15 @@ tr.selected td {
   .front .center-wrapper .panel-col-last .pane-block li {
     display: block;
     position: relative;
-    margin: .5em 0;
+    margin: .5em 1em;
     padding: .5em 1em;
     background-color: #C62B09;
   }
+
   .front .center-wrapper .panel-col .pane-block li:first-child,
   .front .center-wrapper .panel-col-last .pane-block li:first-child {
-    background-color: #BEE5EE;
+    background-color: transparent;
     padding: 0 .5em;
+    margin: 0;
+    line-height: 1.3;
   }

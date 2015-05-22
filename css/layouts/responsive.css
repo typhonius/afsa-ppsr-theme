@@ -426,15 +426,17 @@
   }
   .front .center-wrapper .panel-col .pane-block li,
   .front .center-wrapper .panel-col-last .pane-block li {
-    width:40%;
+    width:45%;
+    min-width: 10em;
   }
   .front .center-wrapper .panel-col .pane-block li:first-child,
   .front .center-wrapper .panel-col-last .pane-block li:first-child {
-    width: 70%;
+    width: 90%;
+    min-width: 8em;
     word-wrap: normal;
+    white-space: pre-wrap;
     font-weight: bold;
-    font-size: 2em;
-    line-height: 1;
+    font-size: 1.8em;
   }
 }
 @media all and (max-width: 799px) {
