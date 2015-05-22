@@ -150,7 +150,7 @@
   margin: 0 0 2em 0;
   padding: 0;
   display: inline;
-  list-style: none outside none none;
+  list-style: none outside none;
 }
 .region-footer .block-menu .menu li {
   float: left;
@@ -944,7 +944,7 @@ tr.selected td {
   color: #FFFFFF;
 }
 .rslides_tabs {
-  list-style: outside none none;
+  list-style: none outside none;
   display: block;
   width: 70%;
   position: absolute;
@@ -1027,3 +1027,72 @@ tr.selected td {
   position: absolute;
   width: 100%;
 }
+/* Homepage layout */
+  .front .home-summary {
+    color: #FFFFFF;
+    background-color: #C62B09;
+    padding: .5em 1em 1em 1em;
+    margin: 0;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  .front .home-summary a {
+    color: #FFFFFF;
+  }
+  .front .home-summary h2 {
+    margin-top: 0;
+  }
+  .front .pane-individuals, .front .pane-business,
+  .front .pane-professionals, .front .pane-latest-news {
+    border: 1px solid #909090;
+    padding: 0 1em 1em 1em;
+    margin: 0;
+  }
+  .front .pane-individuals h2, .front .pane-business h2,
+  .front .pane-professionals h2, .front .pane-latest-news h2 {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #454B56;
+  }
+  .front .pane-individuals a, .front .pane-business a,
+  .front .pane-professionals a, .front .pane-latest-news a {
+    text-decoration: none;
+  }
+  .front .pane-individuals a:hover, .front .pane-business a:hover,
+  .front .pane-professionals a:hover, .front .pane-latest-news a:hover,
+  .front .pane-individuals a:focus, .front .pane-business a:focus,
+  .front .pane-professionals a:focus, .front .pane-latest-news a:focus {
+    text-decoration: underline;
+  }
+  .front .center-wrapper .panel-col .pane-block a,
+  .front .center-wrapper .panel-col-last .pane-block a {
+    color: #333333;
+    text-decoration: none;
+  }
+  .front .center-wrapper .panel-col .pane-block {
+    margin: 0;
+  }
+  .front .center-wrapper .panel-col-last .pane-block {
+    margin: 0;
+  }
+  .front .center-wrapper .pane-block ul,
+  .front .center-wrapper .pane-views ul {
+    list-style: none outside none;
+    padding-left: 0;
+  }
+  .front .center-wrapper .pane-views ul li {
+    border-bottom: 1px solid #909090;
+    padding: .5em 0;
+  }
+  .front .center-wrapper .panel-col .pane-block li,
+  .front .center-wrapper .panel-col-last .pane-block li {
+    display: block;
+    position: relative;
+    margin: .5em 0;
+    padding: .5em 1em;
+    background-color: #C62B09;
+  }
+  .front .center-wrapper .panel-col .pane-block li:first-child,
+  .front .center-wrapper .panel-col-last .pane-block li:first-child {
+    background-color: #BEE5EE;
+    padding: 0 .5em;
+  }
