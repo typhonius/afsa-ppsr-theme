@@ -1073,6 +1073,12 @@ tr.selected td {
     color: #FFFFFF;
     text-decoration: none;
   }
+  .front .center-wrapper .panel-col .pane-block li a:hover,
+  .front .center-wrapper .panel-col-last .pane-block li a:hover,
+  .front .center-wrapper .panel-col .pane-block li a:focus,
+  .front .center-wrapper .panel-col-last .pane-block li a:focus {
+    text-decoration: underline;
+  }
   .front .center-wrapper .panel-col .pane-block {
     margin: 0;
   }
