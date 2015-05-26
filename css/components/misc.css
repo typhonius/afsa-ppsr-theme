@@ -235,8 +235,8 @@ li.active-trail .sf-no-children {
 #navigation .links a[href$="need-help"],
 #navigation .menu a[href$="need-help"] {
   /* Need help icon display */
-  background: url("../../images/qn-icon.png") no-repeat scroll right center / 20px auto transparent;
-  padding-right: 2em;
+  background: url("../../images/qn-icon.png") no-repeat scroll right 9px / 20px auto transparent;
+  padding-right: 1.3em;
   padding-top: .3em;
   margin-top: -.3em;
 }
@@ -253,6 +253,7 @@ li.active-trail .sf-no-children {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: .8em;
 }
 
 /**
@@ -583,7 +584,8 @@ span.field-label {
   display: block;
 }
 .sidebar-first .block-menu-block h2 {
-
+  font-size: 2.1em;
+  font-weight: 400;
 }
 .sidebar-first .block-menu-block .menu-block-wrapper {
   background: url("../../images/header-bkg.png") no-repeat scroll 5% 110% #EAF0F3;
@@ -633,6 +635,7 @@ span.field-label {
 .sidebar-first .block-menu-block .menu__item.is-collapsed {
   list-style: none outside none;
   background: url("../../images/chevron-right.png") no-repeat scroll 96% center #125361;
+  padding-right: .8em;
 }
 .menu__item.is-leaf,
 .menu__item.is-expanded,
@@ -1020,6 +1023,7 @@ tr.selected td {
   height: 18em;
   text-shadow: 1px 1px 5px #000000;
   z-index: 10;
+  font-size: 2em;
 }
 /* Adjust log in view for slideshow */
 .front.logged-in .field-name-field-slide-image .field-item {

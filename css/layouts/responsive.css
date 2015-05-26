@@ -76,22 +76,23 @@
     position: absolute;
     background: url("../../images/gl-nav.gif") repeat-x scroll left top #006171;
     top: 0;
-    height: 5em;
     width: 100%;
   }
   #navigation .links li,
   #navigation .menu li {
     border-right: 1px solid #266573;
-    padding: 2em 1em; /* LTR */; /* LTR */
+    padding: 1.2em 1em; /* LTR */; /* LTR */
   }
   #navigation .menuparent > ul {
-    margin-top: 2.5em;
+    margin-top: .9em;
+    max-width: 15em !important;
   }
   #navigation .links li > ul li,
   #navigation .menu li > ul li {
-    padding: .5em 1em;
-    border: none;
+    padding: .5em;
+    border-bottom: 1px solid #FFFFFF;
     background-color: #006171;
+    font-size: .8em;
   }
   #navigation .links li > ul li:hover,
   #navigation .menu li > ul li:hover,
@@ -102,8 +103,8 @@
   #navigation .links a[href="/"], 
   #navigation .menu a[href="/"] {
   /* Home icon display */
-  background: url("../../images/home.png") no-repeat scroll center center / 20px auto transparent;
-  width: 2em;
+  background: url("../../images/home.png") no-repeat scroll center 9px / 20px auto transparent;
+  width: 1.8em;
   height: 1.3em;
   display: block;
   text-indent: -1000px;
@@ -431,12 +432,11 @@
   }
   .front .center-wrapper .panel-col .pane-block li:first-child,
   .front .center-wrapper .panel-col-last .pane-block li:first-child {
-    width: 90%;
+    width: 84%;
     min-width: 8em;
     word-wrap: normal;
     white-space: pre-wrap;
-    font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2.25em;
   }
 }
 @media all and (max-width: 799px) {
