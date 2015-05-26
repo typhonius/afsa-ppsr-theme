@@ -259,7 +259,6 @@ li.active-trail .sf-no-children {
 /**
  * Titles.
  */
-.page__title,          /* The title of the page. */
 .node__title,          /* Title of a piece of content when it is given in a list of content. */
 /*.block__title,          Block title. */
 .comments__title,      /* Comment section heading. */
@@ -267,7 +266,11 @@ li.active-trail .sf-no-children {
 .comment__title {     /* Comment title. */
   margin: 0;
 }
-
+.page__title {
+  color: #454B56;
+  margin: 1em 0 0 0;
+  border-bottom: 8px solid #454B56;
+}
 /**
  * Messages.
  */
@@ -586,6 +589,7 @@ span.field-label {
 .sidebar-first .block-menu-block h2 {
   font-size: 2.1em;
   font-weight: 400;
+  color: #454B56;
 }
 .sidebar-first .block-menu-block .menu-block-wrapper {
   background: url("../../images/header-bkg.png") no-repeat scroll 5% 110% #EAF0F3;
