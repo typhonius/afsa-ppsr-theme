@@ -195,14 +195,14 @@ blockquote {
   /* Also indent the quote on both sides. */
   margin: 0 1.5em;
 }
-.region-header, .block-title, 
+.region-header, .block-title, .pane-block h2,
 .rs-slideshow,.home-summary h2, .pane-views h2,
 #navigation, .menu-block-wrapper {
   font-family: Oswald, Arial, Helvetica, sans-serif;
 }
-.home-summary h2, .pane-views h2, .pane-block h2 {
+.home-summary h2, .pane-views h2, .pane-block h2,
+.home-summary h2 a, .pane-views h2 a, .pane-block h2 a {
   font-weight: 400;
-  font-size: 2em;
 }
 #navigation {
   font-weight: 300;
