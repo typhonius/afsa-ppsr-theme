@@ -969,6 +969,7 @@ tr.selected td {
   text-align: center;
   text-decoration: none;
   min-width: 1.4em;
+  min-height: 1.5em;
   margin-right: .5em;
 }
 .rslides_tabs a:hover,
@@ -982,6 +983,7 @@ tr.selected td {
   width: 1.5em;
   height: 1.5em;
   background: url("../../images/featured-articles-pause.png") no-repeat scroll center top #007676;
+  overflow: hidden;
 }
 .rslides_tabs a.paused {
   background: url("../../images/featured-articles-play.png") no-repeat scroll center top #007676;
@@ -1060,10 +1062,19 @@ tr.selected td {
     width: 100%;
     display: block;
     border-bottom: 3px solid #454B56;
+    margin-top: .5em;
+    margin-bottom: 0;
   }
   .front .pane-individuals a, .front .pane-business a,
   .front .pane-professionals a, .front .pane-latest-news a {
     text-decoration: none;
+  }
+  .pane-latest-news h3:first-of-type {
+    border: none;
+  }
+  .pane-latest-news h3 {
+    border-top: 1px solid #454B56;
+    padding-top: .5em;
   }
   .front .pane-individuals a:hover, .front .pane-business a:hover,
   .front .pane-professionals a:hover, .front .pane-latest-news a:hover,
