@@ -36,6 +36,10 @@ function ppsr_theme_preprocess_maintenance_page(&$variables, $hook) {
  */
 function ppsr_theme_preprocess_html(&$variables, $hook) {
   drupal_add_css('http://fonts.googleapis.com/css?family=Oswald:300,400,700', 'external');
+  drupal_add_js('https://www.google.com/jsapi', 'external');
+  drupal_add_js('sites/all/themes/ppsr_theme/js/news-feed.js', array('scope' => 'footer'));
+  drupal_add_js('google.load("feeds", "1");', 'inline');
+  drupal_add_js('window.onload=function() {rssfeedsetup()}','inline');
 }
 /* -- Delete this line if you want to use this function
 function ppsr_theme_preprocess_html(&$variables, $hook) {
