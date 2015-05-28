@@ -22,9 +22,6 @@
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-#header {
-  background: #ffffff url('../../images/header-bkg.png') no-repeat scroll right top;
-}
 #header, #content, #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
@@ -114,7 +111,7 @@
 
 @media only screen and (max-width: 799px) {
   #header {
-    margin-top: 2em;
+    margin-top: 3em;
   }
   .header__logo, .header__logo img {
     width: 100%;
@@ -157,6 +154,7 @@
     padding-top:  2em;
     height: 0;
     overflow: hidden;
+    z-index: 200;
   }
   #navigation .block-superfish:hover,
   #navigation .block-superfish:focus {
@@ -167,27 +165,39 @@
   #navigation .menu li > ul li {
     display: none;
   }
+  .region-header .contextual-links-region {
+    width: 100%;
+  }
+  .region-header .contextual-links-region:first-of-type {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 110;
+    margin-top: -.6em;
+    width: 90%;
+  }
 }
 
 /* Footer region */
-@media all and (min-width: 580px) {
-  .region-footer .block:nth-child(odd) {
-    width: 66%;
+@media all and (min-width: 800px) {
+  .region-footer .block.even {
     float: left;
-    clear: left;
+    width: 14%;
   }
-   .region-footer .block:nth-child(even) {
-    width: 33%;
-    float: right;
-    clear: right;
-    text-align: right;
+  .region-footer .block.odd {
+    float: left;
+    width: 30%;
+  }
+  .region-footer .block:first-child {
+    width: 53%;
   } 
 }
-@media all and (max-width: 579px) {
+@media all and (max-width: 799px) {
   .region-footer .block {
     width: 100%;
     float: left;
     clear: both;
+    margin-top: 1em;
   }
 }
 
@@ -404,13 +414,13 @@
   }
   .rs-slideshow .field-name-field-read-more a {
     position: relative;
-    padding: 1em 6em 1em 1em;
+    padding: 5% 24% 0 5%;
   }
 }
 @media all and (max-width: 799px) {
   .rs-slideshow .field-name-field-read-more a {
     position: relative;
-    padding: 4em 7em 0 3em;
+    padding: 10% 20% 0 10%;
   }
 }
 /**

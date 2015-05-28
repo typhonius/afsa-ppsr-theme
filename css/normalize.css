@@ -197,7 +197,8 @@ blockquote {
 }
 .region-header, .block-title, .pane-block h2,
 .rs-slideshow,.home-summary h2, .pane-views h2,
-.pane-latest-news h2, #navigation, .menu-block-wrapper {
+.pane-latest-news h2, #navigation, .menu-block-wrapper,
+.region-bottom {
   font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 .home-summary h2, .pane-views h2, .pane-block h2, .pane-latest-news h2,

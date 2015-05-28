@@ -79,7 +79,9 @@
 /**
  * Branding header.
  */
-
+body {
+  background: #ffffff url('../../images/header-bkg.png') no-repeat scroll right top;
+}
 /* Wrapping link for logo. */
 .header__logo {
   float: left; /* LTR */
@@ -127,14 +129,12 @@
 
 /* Wrapper for any blocks placed in the header region. */
 .header__region {
-  /* Clear the logo. */
-  clear: both;
 }
 /* The footer */
 #footer {
   background: url("../../images/footer-bkg.png") no-repeat scroll right bottom #333333;
   color: #FFFFFF;
-  padding-bottom: .5em;
+  padding: 3em 1em 3em 1em;
 }
 #footer a {
   color: #FFFFFF;
@@ -165,29 +165,24 @@
   padding: 0.2em 0.7em;
   border-left: 1px solid #FFFFFF;
 }
+
 /* The footer social media items */
-.region-footer .block a[href$="user/AFSAGovAu"] {
-  display: block;
-  width: 44px;
-  height: 44px;
-  text-indent: -100px;
-  background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
+.region-footer .block p, .region-bottom p {
+  margin: 0;
 }
-.region-footer .block em {
-  font-family: Georgia, Times, Time New Roman, serif;
-}
-/* The footer social media items */
 .region-footer .block a[href$="user/AFSAGovAu"] {
   display: inline-block;
-  width: 44px;
-  height: 44px;
-  text-indent: 1000px;
-  background: url("../../images/youtube-icon.png") no-repeat scroll center center transparent;
+  width: 32px;
+  height: 32px;
+  text-indent: -1000px;
+  background: url("../../images/youtube-icon.png") no-repeat scroll center center / 30px auto transparent;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: -0.5em;
 }
-.region-footer .block em {
-  font-family: Georgia, Times, Time New Roman, serif;
+.region-bottom {
+  color: #444A55;
+  padding: 0 1.5em;
 }
 
 /**
@@ -525,19 +520,34 @@ span.field-label {
  */
 
 /* Block wrapper. */
-.block {
-  margin-bottom: 1.5em;
+.region-header .contextual-links-region:first-of-type {
+  padding: 1em .4em 0 0;
+}
+.region-header .contextual-links-region {
+  padding: 0;
+  white-space: nowrap;
+  float: right;
+  clear: right;
+  min-width: 40%;
+  padding: 1em 0;
 }
 
-/* Block PPSR links. */
-#block-block-6 {
- max-width: 250px; float: right;
-}
+/* Block header PPSR links. */
 .region-header a[href*="ppsr/Login"] {
-  background: url("../../images/lock-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
+  background: #006171 url("../../images/gl-nav.gif") repeat-x scroll left bottom;
+  float: right;
+  padding: .5em 1em;
+}
+.front .center-wrapper a[href*="ppsr/SearchLanding"] {
+  background: url("../../images/register-icon-white.png") no-repeat scroll right center / 20px auto #C62B09;
+  padding: 2px 1.5em 0 0;
+  white-space: nowrap;
 }
 .region-header a[href*="ppsr/SearchLanding"] {
-  background: url("../../images/search-icon-44.png") no-repeat scroll .5em center / 20px auto #006A72;
+  background: url("../../images/register-icon-white.png") no-repeat scroll right center / 20px auto #C62B09;
+  float: right;
+  padding: .5em 2em .5em 1em;
+  border-right: .5em solid #C62B09;
 }
 .region-header a[href*="ppsr/Login"],
 .region-header a[href*="ppsr/SearchLanding"] {
@@ -545,37 +555,46 @@ span.field-label {
  color: #ffffff;
  text-decoration: none;
  display: block;
- float: right;
- clear: right;
  margin: 0 .3em .3em;
- padding: .5em 1em;
- min-width: 174px;
- text-align: right;
 }
 .region-header a[href*="ppsr/SearchLanding"]:focus,
-.region-header a[href*="ppsr/SearchLanding"]:hover,
-.region-header a[href*="ppsr/Login"]:focus,
-.region-header a[href*="ppsr/Login"]:hover {
+.region-header a[href*="ppsr/SearchLanding"]:hover{
  background-color: #15505F;
  text-decoration: underline;
+ border-right: .5em solid #15505F;
+}
+.region-header a[href*="ppsr/Login"]:focus,
+.region-header a[href*="ppsr/Login"]:hover {
+  background-image: none;
+  background-color: #15505F;
+  text-decoration: underline;
 }
 
 /* Block search header. */
-#block-search-api-page-default-search {
-  float:right;
-  min-width: 224px;
+.region-header .contextual-links-region:first-of-type form {
+  float: right;
+}
+.region-header .contextual-links-region div {
+  display: inline-block;
+  float: left;
 }
 .search-form .form-text, .search-form-widget .form-text {
   min-width: 180px;
-  float:left;
-  height: 26px;
+  padding: .2em .5em;
+  float: left;
 }
 .search-form .form-submit, .search-form-widget .form-submit {
-  text-indent: -100px;
-  width: 32px;
-  height: 26px;
   border: none;
-  background: url("../../images/search-icon-44.png") no-repeat scroll center center / 16px auto #006A72;
+  background: #006171 url("../../images/gl-nav.gif") repeat-x scroll left bottom;
+  color: #FFFFFF;
+  text-transform: lowercase;
+  padding: .2em 1em .3em 1em;
+}
+.search-form .form-submit, .search-form-widget .form-submit:hover,
+.search-form .form-submit, .search-form-widget .form-submit:focus {
+  background-image: none;
+  background-color: #15505F;
+  text-decoration: underline;
 }
 /**
  * Menus.
@@ -950,6 +969,9 @@ tr.selected td {
   background: url("../../images/slide-bkg.jpg") no-repeat scroll right bottom #008000;
   color: #FFFFFF;
 }
+.rs-slideshow .field-items {
+  word-wrap: normal !important;
+}
 .rslides_tabs {
   list-style: none outside none;
   display: block;
@@ -1075,6 +1097,7 @@ tr.selected td {
   .pane-latest-news h3 {
     border-top: 1px solid #454B56;
     padding-top: .5em;
+    margin: 0;
   }
   .front .pane-individuals a:hover, .front .pane-business a:hover,
   .front .pane-professionals a:hover, .front .pane-latest-news a:hover,
@@ -1118,8 +1141,8 @@ tr.selected td {
   .front .center-wrapper .panel-col-last .pane-block li {
     display: block;
     position: relative;
-    margin: .5em 1em;
-    padding: .5em 1em;
+    margin: .5em;
+    padding: .5em;
     background-color: #C62B09;
   }
 
