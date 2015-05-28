@@ -67,6 +67,7 @@
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
+    background-color: #FFFFFF;
   }
   #navigation {
     /* Move the navbar up inside #main's padding. */

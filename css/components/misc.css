@@ -80,7 +80,7 @@
  * Branding header.
  */
 body {
-  background: #ffffff url('../../images/header-bkg.png') no-repeat scroll right top;
+  background: #ffffff url('../../images/header-bkg.png') repeat-x scroll center top;
 }
 /* Wrapping link for logo. */
 .header__logo {
@@ -162,7 +162,7 @@ body {
   border: none;
 }
 .region-footer .block-menu .menu li a {
-  padding: 0.2em 0.7em;
+  padding: 0 0.7em;
   border-left: 1px solid #FFFFFF;
 }
 
@@ -1034,7 +1034,7 @@ tr.selected td {
   display: block;
   float: left;
 }
-.rs-slideshow img {
+.front.not-logged-in .rs-slideshow img {
   display: block;
   border: 0px none;
   position: absolute;
@@ -1054,11 +1054,20 @@ tr.selected td {
   font-size: 2em;
 }
 /* Adjust log in view for slideshow */
+.front.logged-in .field-name-field-slide-image .field-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+}
 .front.logged-in .field-name-field-slide-image .field-item {
   height: 18em;
-  position: absolute;
+  overflow: hidden;
   width: 100%;
+  position: absolute;
+  bottom: 51.5%;
 }
+
 /* Homepage layout */
   .front .home-summary {
     color: #FFFFFF;
