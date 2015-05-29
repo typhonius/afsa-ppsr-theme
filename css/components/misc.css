@@ -988,6 +988,7 @@ tr.selected td {
   font-size: 1em;
   background-color: #005D5D;
   opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
   text-align: center;
   text-decoration: none;
   min-width: 1.4em;
@@ -999,6 +1000,7 @@ tr.selected td {
 .rslides_tabs li.rslides_here a {
   background-color: #007676;
   opacity: 1;
+  filter: alpha(opacity=1); /* For IE8 and earlier */
 }
 .rslides_tabs a.pause {
   text-indent: -1000px;
@@ -1065,19 +1067,34 @@ tr.selected td {
   overflow: hidden;
   width: 100%;
   position: absolute;
-  bottom: 51.5%;
+  top: 0;
 }
 
 /* Homepage layout */
   .front .home-summary {
     color: #FFFFFF;
     background-color: #C62B09;
-    padding: .5em 1em 1em 1em;
+    background: -webkit-linear-gradient(left bottom, #EF512C, #C62B09); /* For Safari */
+    background: -o-linear-gradient(top right, #EF512C, #C62B09); /* For Opera */
+    background: -moz-linear-gradient(top right, #EF512C, #C62B09); /* For Opera */
+    background: linear-gradient(to top right, #EF512C, #C62B09); /* Standard syntax (must be LAST) */
+    padding: .5em 1em 0 1em;
     margin: 0;
     border-bottom: 1px solid #FFFFFF;
+    min-height: 329px;
+  }
+  .front .home-summary p img {
+    display: block;
+    margin: .7em -1em -30% !important;
   }
   .front .home-summary a {
     color: #FFFFFF;
+    background: #006171 url("../../images/gl-nav.gif") repeat-x scroll left bottom;
+    padding: .5em 1em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 10;
   }
   .front .home-summary h2 {
     margin-top: 0;
@@ -1118,6 +1135,9 @@ tr.selected td {
   .front .center-wrapper .panel-col-last .pane-block li:first-child a {
     color: #333333;
     text-decoration: none;
+    font-weight: bold;
+    background: transparent url('../../images/double-chevron-icon-green.png') no-repeat scroll right top;
+    padding-right: 1.5em;
   }
   .front .center-wrapper .panel-col .pane-block li a,
   .front .center-wrapper .panel-col-last .pane-block li a{    
@@ -1130,11 +1150,54 @@ tr.selected td {
   .front .center-wrapper .panel-col-last .pane-block li a:focus {
     text-decoration: underline;
   }
-  .front .center-wrapper .panel-col .pane-block {
-    margin: 0;
-  }
+  .front .center-wrapper .panel-col .pane-block,
   .front .center-wrapper .panel-col-last .pane-block {
     margin: 0;
+    background-color: #DAF0F6;
+  }
+  .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child,
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {    
+    background-image: url('../../images/help-icon-white.png');
+    background-image: url('../../images/help-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/help-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/help-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/help-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 124% -90%;
+  }
+  .front.not-logged-in .center-wrapper .panel-col .pane-block:nth-child(2),
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:nth-child(2) .pane-block {
+    background-image: url('../../images/migrated-registration-icon-white.png');
+    background-image: url('../../images/migrated-registration-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/migrated-registration-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/migrated-registration-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/migrated-registration-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right 30%;
+  }
+  .front.not-logged-in .center-wrapper .panel-col-last .pane-block:first-child,
+  .front.logged-in .center-wrapper .panel-col-last .panels-ipe-portlet-wrapper:first-child .pane-block {
+    background-image: url('../../images/create-registration-icon-white.png');
+    background-image: url('../../images/create-registration-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/create-registration-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/create-registration-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/create-registration-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+  }
+  .front.not-logged-in .center-wrapper .panel-col-last .pane-block:nth-child(2),
+  .front.logged-in .center-wrapper .panel-col-last .panels-ipe-portlet-wrapper:nth-child(2) .pane-block {
+    background-image: url('../../images/car-icon-white.png');
+    background-image: url('../../images/car-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/car-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/car-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/car-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right 14%;
   }
   .front .center-wrapper .pane-block ul,
   .front .center-wrapper .pane-views ul {
