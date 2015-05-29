@@ -1082,10 +1082,12 @@ tr.selected td {
     margin: 0;
     border-bottom: 1px solid #FFFFFF;
     min-height: 329px;
+    overflow: hidden;
   }
   .front .home-summary p img {
     display: block;
-    margin: .7em -1em -30% !important;
+    margin: .7em -1em -16% -1em !important;
+    max-width: 350px;
   }
   .front .home-summary a {
     color: #FFFFFF;
