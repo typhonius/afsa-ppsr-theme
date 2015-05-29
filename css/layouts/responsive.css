@@ -428,15 +428,11 @@
  * Middle panel of three column staked 33/34/33.
  */
 @media all and (min-width: 800px) {
-  .front .home-summary {
-    height: 311px;
-  }
   .front .center-wrapper .panel-col .pane-block,
   .front .center-wrapper .panel-col-last .pane-block {
-    background-color: #BEE5EE;
     padding: .5em;
     border: 1px solid #FFFFFF;
-    height: 150px;
+    min-height: 150px;
   }
   .front .center-wrapper .panel-col .pane-block li,
   .front .center-wrapper .panel-col-last .pane-block li {
@@ -475,41 +471,53 @@
     margin: 0;
     padding: .5em 0;
     z-index: 1;
-    top: 27em;
     height: 5em;
   }
-  .front .center-wrapper .panel-col .pane-block:nth-child(odd) {
+  .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child {
+    top: 35em;
     left: .6em;
   }
-  .front .center-wrapper .panel-col-last .pane-block:nth-child(odd) {
+  .front.not-logged-in .center-wrapper .panel-col-last .pane-block:first-child {
+    top: 35em;
     left: 50%;
   }
-  .front .center-wrapper .panel-col-last .pane-block:nth-child(even) {
-    top: 33.5em;
+  .front.not-logged-in .center-wrapper .panel-col-last .pane-block:nth-child(2){
+    top: 41.5em;
     left: 50%;
   }
-  .front .center-wrapper .panel-col .pane-block:nth-child(even) {
-    top: 33.5em;
+  .front.not-logged-in .center-wrapper .panel-col .pane-block:nth-child(2) {
+    top: 41.5em;
+    left: .6em;
+  }
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {
+    top: 22em;
+    left: .6em;
+  }
+  .front.logged-in .center-wrapper .panel-col-last .panels-ipe-portlet-wrapper:first-child .pane-block {
+    top: 22em;
+    left: 50%;
+  }
+  .front.logged-in .center-wrapper .panel-col-last .panels-ipe-portlet-wrapper:nth-child(2) .pane-block  {
+    top: 28.5em;
+    left: 50%;
+  }
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:nth-child(2) .pane-block  {
+    top: 28.5em;
     left: .6em;
   }
   .front .center-wrapper .panel-col .pane-block li,
-  .front .center-wrapper .panel-col-last .pane-block li,
-  .front .center-wrapper .panel-col .pane-block li:first-child,
-  .front .center-wrapper .panel-col-last .pane-block li:first-child {
+  .front .center-wrapper .panel-col-last .pane-block li {
     font-size: 1em;
     font-weight: bold;
   }
+  .front .center-wrapper .panel-col .pane-block li a,
+  .front .center-wrapper .panel-col-last .pane-block li a {
+      background-image: none !important;
+  }
 }
 @media all and (max-width: 499px) {
-  .front .center-wrapper .panel-col-last .pane-block,
-  .front .center-wrapper .panel-col .pane-block {
-    margin-top: 3em !important;
-  }
   .front .center-wrapper .panel-col .pane-block li,
-  .front .center-wrapper .panel-col-last .pane-block li,
-  .front .center-wrapper .panel-col .pane-block li:first-child,
-  .front .center-wrapper .panel-col-last .pane-block li:first-child {
+  .front .center-wrapper .panel-col-last .pane-block li {
     font-size: .8em;
-    padding: 0 .5em !important;
   }
 }

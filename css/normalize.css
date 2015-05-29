@@ -568,3 +568,6 @@ table {
 .views-view-grid.cols-3 td {
   width: 33.3%;
 }
+.toc-header .toc-number {
+  display: none;
+}
