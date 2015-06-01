@@ -139,11 +139,10 @@ textarea {
    * font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
    * font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
    * font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
-   * font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
-   *
+   * 
    * font-family: "Courier New", "DejaVu Sans Mono", monospace;
    */
-  font-family: Arial, Helvetica, Verdana, sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 /* Remove default margin. */
@@ -159,11 +158,13 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
+  color: #165696;
 }
 a:visited {
 }
 a:hover,
 a:focus {
+  background-color: #E9F1F3;
 }
 a:active {
 }
@@ -213,12 +214,12 @@ blockquote {
   font-weight: 300;
   font-size: 1.2em;
 }
-
 .node-title {
-  font-family: Arial, Helvetica, Verdana, sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 .pane-latest-news p {
   font-size: .8em;
+  margin: 0.5em 0;
 }
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
@@ -257,8 +258,7 @@ abbr[title] {
 }
 
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
-b,
-strong {
+b, strong {
   font-weight: bold;
 }
 
@@ -280,17 +280,12 @@ hr {
 
 /* Address styling not present in IE 8/9. */
 mark {
-  background: #ff0;
-  color: #000;
+  background: #FFFF00;
+  color: #000000;
 }
 
 /* Correct font family set oddly in Safari 5 and Chrome. */
-code,
-kbd,
-pre,
-samp,
-tt,
-var {
+code, kbd, pre, samp, tt, var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
   _font-family: 'courier new', monospace;
   font-size: 1em;
@@ -310,8 +305,8 @@ q {
 }
 
 /* Address inconsistent and variable font size in all browsers. */
-small {
-  font-size: 80%;
+small, .small {
+  font-size: 70%;
 }
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
@@ -566,8 +561,98 @@ table {
   vertical-align: top;
 }
 .views-view-grid.cols-3 td {
-  width: 33.3%;
+  width: 33%;
 }
 .toc-header .toc-number {
   display: none;
+}
+
+/**
+ * Pane Block, Pane Views
+ */
+.logged-in div.contextual-links-wrapper a.contextual-links-trigger {
+  background: transparent url("/modules/contextual/images/gear-select.png") no-repeat scroll 2px 0px;
+}
+.logged-in ul.contextual-links li a {
+  background: none !important;
+  font-weight: normal;
+  padding: .3em;
+}
+.pane-block ul, .pane-views ul {
+  list-style: outside none none;
+}
+.pane-block a, .pane-views a,
+.front .pane-latest-news a {
+  display: block;
+  color: #454B56;
+  text-decoration: none;
+  background: transparent url("../images/light-grey-chevron.png") no-repeat scroll right center;
+  padding-right: 0.3em;
+}
+.pane-block h2 a, .pane-views h2 a,
+.front .pane-latest-news h2 a {
+  background: transparent url("../images/grey-chevron.png") no-repeat scroll right center;
+  padding-right: 0.3em;
+}
+.pane-block a:hover, .pane-views a:hover, 
+.pane-block a:focus, .pane-views a:focus,
+.front .pane-latest-news a:hover, .front .pane-latest-news a:focus {
+  text-decoration: underline;
+}
+
+/* Homepage */
+.front .home-summary, .front .home-summary a,
+.region-header a[href*="ppsr/Login"],
+.region-header a[href*="ppsr/SearchLanding"] {
+  color: #FFFFFF;
+}
+
+.front .center-wrapper .panel-col .pane-block li:first-child a,
+.front .center-wrapper .panel-col-last .pane-block li:first-child a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.front .center-wrapper .panel-col .pane-block li a,
+.front .center-wrapper .panel-col-last .pane-block li a{    
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.page__title {
+  color: #454B56;
+}
+   /* Style left navigation layout */
+.sidebar-first .block-menu-block h2 {
+  font-size: 2.1em;
+  font-weight: 400;
+  color: #454B56;
+}
+/* Main menu and secondary menu links and menu block links. */
+#navigation .links a,
+#navigation .menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/**
+ * Slideshow
+ */
+.rs-slideshow, .rslides_tabs a,
+.rs-slideshow a {
+  color: #FFFFFF;
+}
+.rslides_tabs a {
+  font-size: 1em;
+}
+.rs-slideshow a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* The footer */
+#footer, #footer a {
+  color: #FFFFFF;
+}
+.region-bottom {
+  color: #444A55;
 }

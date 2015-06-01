@@ -58,7 +58,6 @@ function ppsr_theme_preprocess_html(&$variables, $hook) {
 function ppsr_theme_preprocess_page(&$variables, $hook) {
   if(drupal_is_front_page()) {
     drupal_add_js('sites/all/themes/ppsr_theme/js/news-feed.js', array('scope' => 'footer'));
-
     drupal_add_js('google.load("feeds", "1");', 'inline');
     drupal_add_js('window.onload=function() {rssfeedsetup()}','inline');
   }
