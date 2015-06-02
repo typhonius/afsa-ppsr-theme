@@ -75,6 +75,7 @@
     background: url("../../images/gl-nav.gif") repeat-x scroll left top #006171;
     top: 0;
     width: 100%;
+    min-width: 900px;
   }
   #navigation .links li,
   #navigation .menu li {
@@ -107,12 +108,16 @@
   display: block;
   text-indent: -1000px;
   margin-top: -.3em;
-}
+  }
+  .views-view-grid td article {
+    min-height: 150px;
+    float: left;
+  }
 }
 
 @media only screen and (max-width: 799px) {
   #header {
-    margin-top: 3em;
+    margin-top: 3.5em;
   }
   .header__logo, .header__logo img {
     width: 100%;
@@ -176,6 +181,10 @@
     z-index: 110;
     margin-top: -.6em;
     width: 90%;
+  }
+  .views-view-grid.cols-3 td {
+    width: 100%;
+    float: left;
   }
 }
 
@@ -474,19 +483,19 @@
     height: 5em;
   }
   .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child {
-    top: 35em;
+    top: 36em;
     left: .6em;
   }
   .front.not-logged-in .center-wrapper .panel-col-last .pane-block:first-child {
-    top: 35em;
+    top: 36em;
     left: 50%;
   }
   .front.not-logged-in .center-wrapper .panel-col-last .pane-block:nth-child(2){
-    top: 41.5em;
+    top: 42.5em;
     left: 50%;
   }
   .front.not-logged-in .center-wrapper .panel-col .pane-block:nth-child(2) {
-    top: 41.5em;
+    top: 42.5em;
     left: .6em;
   }
   .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {

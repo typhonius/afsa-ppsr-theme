@@ -561,7 +561,8 @@ table {
   vertical-align: top;
 }
 .views-view-grid.cols-3 td {
-  width: 33%;
+  width: 32%;
+  display: inline-table;
 }
 .toc-header .toc-number {
   display: none;
