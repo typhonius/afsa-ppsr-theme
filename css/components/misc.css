@@ -958,8 +958,8 @@ tr.selected td {
   overflow: hidden;
   width: 100%;
   height: 18em;
-  padding: 0;
-  margin: 0 0 1em 0;
+  padding: 0 !important;
+  margin: 0 0 1em 0 !important;
   background: url("../../images/slide-bkg.jpg") no-repeat scroll right bottom #008000;
 }
 .rs-slideshow .field-items {
@@ -970,8 +970,8 @@ tr.selected td {
   display: block;
   width: 70%;
   position: absolute;
-  margin-top: -4em;
-  margin-left: 1em;
+  margin-top: -4em !important;
+  margin-left: 1em !important;
   z-index: 30;
 }
 .rslides_tabs a {
@@ -1069,10 +1069,13 @@ tr.selected td {
     min-height: 329px;
     overflow: hidden;
   }
+  .front .home-summary p {
+    margin: 0;
+  }
   .front .home-summary p img, .front .home-summary img {
-    display: block;
-    margin: 1.8em -1em -16% -1em !important;
+    margin: 0.7em -1em -16% -1em !important;
     max-width: 350px;
+    max-height: 165px;
   }
   .front .home-summary a {
     background: #006171 url("../../images/gl-nav.gif") repeat-x scroll left bottom;
@@ -1081,9 +1084,15 @@ tr.selected td {
     text-decoration: none;
     display: inline-block;
     z-index: 10;
+    margin: 0;
+  }
+  .front .home-summary a:hover, .front .home-summary a:focus {
+    background-color: #006171;
+    background-image: none;
   }
   .front .home-summary h2 {
     margin-top: 0;
+    margin-bottom: .3em;
   }
   .front .pane-individuals, .front .pane-business,
   .front .pane-professionals, .front .pane-latest-news {
@@ -1179,6 +1188,9 @@ tr.selected td {
     border-bottom: 1px solid #909090;
     padding: .5em 0;
   }
+  .front .center-wrapper .pane-block ul li {
+    border: none;
+  }
   .front .center-wrapper .panel-col .pane-block li,
   .front .center-wrapper .panel-col-last .pane-block li {
     display: block;
@@ -1203,7 +1215,7 @@ tr.selected td {
     text-decoration: none;
     font-weight: bold;
     display: inline;
-    background: transparent url("../../images/double-chevron-icon-green.png") no-repeat scroll right top;
+    background: transparent url("../../images/double-chevron-icon-green.png") no-repeat scroll right center / 34px auto;
     padding-right: 1.5em;
     font-size: 1.4em;
     line-height: 1;
@@ -1221,4 +1233,43 @@ tr.selected td {
   }
   .views-view-grid td article {
     padding: 1em;
+  }
+  .panel-panel .pane-block {
+    border: 1px solid #909090;
+    padding: 0px 1em 1em;
+    margin: 0px;
+  }
+  .panel-panel .pane-block h2 {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #454B56;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    color: #454B56;
+  }
+  .panel-panel .pane-block ul li {
+    border-bottom: 1px solid #909090;
+    padding: 0.5em 0px;
+  }
+  .panel-panel .pane-block p a {
+    display: block;
+    color: #FFFFFF;
+    float: left;
+    background-image: url("../../images/white-chevron.png");
+    background-color: #006171;
+    background-image: url("../../images/white-chevron.png"), -webkit-linear-gradient(left bottom, #333333, #006171); /* For Safari */
+    background-image: url("../../images/white-chevron.png"), -o-linear-gradient(top right, #333333, #006171); /* For Opera */
+    background-image: url("../../images/white-chevron.png"), -moz-linear-gradient(top right, #333333, #006171); /* For Opera */
+    background-image: url("../../images/white-chevron.png"), linear-gradient(to top right, #333333, #006171); /* Standard syntax (must be LAST) */
+    background-position: 94% center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: .5em 2em .5em 1em;
+  }
+  .panel-panel .pane-block p a:hover, .panel-panel .pane-block p a:focus {
+    background-color: #006171;
+    background-image: url("../../images/white-chevron.png");
+  }
+  .panel-panel .pane-block p {
+    margin: .8em 0 3em 0;
   }
