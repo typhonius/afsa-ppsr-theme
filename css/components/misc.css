@@ -1059,10 +1059,10 @@ tr.selected td {
 /* Homepage layout */
   .front .home-summary {
     background-color: #C62B09;
-    background: -webkit-linear-gradient(left bottom, #EF512C, #C62B09); /* For Safari */
-    background: -o-linear-gradient(top right, #EF512C, #C62B09); /* For Opera */
-    background: -moz-linear-gradient(top right, #EF512C, #C62B09); /* For Opera */
-    background: linear-gradient(to top right, #EF512C, #C62B09); /* Standard syntax (must be LAST) */
+    background: -webkit-linear-gradient(left bottom, #F37D61, #C62B09); /* For Safari */
+    background: -o-linear-gradient(top right, #F37D61, #C62B09); /* For Opera */
+    background: -moz-linear-gradient(top right, #F37D61, #C62B09); /* For Opera */
+    background: linear-gradient(to top right, #F37D61, #C62B09); /* Standard syntax (must be LAST) */
     padding: .5em 1em 0 1em;
     margin: 0;
     border-bottom: 1px solid #FFFFFF;
@@ -1176,7 +1176,7 @@ tr.selected td {
     background-image: url('../../images/car-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: right 14%;
+    background-position: right bottom;
   }
   .front .center-wrapper .pane-block ul,
   .front .center-wrapper .pane-views ul {
@@ -1225,6 +1225,11 @@ tr.selected td {
   }
   .views-view-grid td {
     background-color: #B3DDE9;
+    background: -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background: -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background: -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background: linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    
     border: 1px solid #FFFFFF;
   }
   table.views-view-grid {
@@ -1233,6 +1238,60 @@ tr.selected td {
   }
   .views-view-grid td article {
     padding: 1em;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+  }
+/* Specific background image for Search the Register page.*/
+.page-search-the-ppsr .views-view-grid {
+  border-collapse: collapse;
+}
+.page-search-the-ppsr .views-view-grid td article{
+  min-height: 260px;
+}
+.page-search-the-ppsr .views-view-grid td article:hover {
+  background-color: #EAEAEA;
+}
+  .views-view-grid td article[about^='/searching-motor-vehicles'] {
+    background-image: url('../../images/car-icon-white.png');
+    background-size: 234px;
+  }
+  .views-view-grid td article[about^='/searching-watercraft'] {
+    background-image: url('../../images/watercraft-icon-white.png');
+    background-size: 234px;
+  }
+  .views-view-grid td article[about^='/searching-aircraft-or-aircraft-parts'] {
+    background-image: url('../../images/aircraft-icon-white.png');
+  }
+  .views-view-grid td article[about^='/searching-intellectual-property'] {
+    background-image: url('../../images/IP-icon-white.png');
+  }
+  .views-view-grid td article[about^='/searching-grantors'] {
+    background-image: url('../../images/grantor-icon-white.png');
+  }
+  .views-view-grid td article[about^='/searching-ppsr-registration-number'] {
+    background-image: url('../../images/registration-number-icon-white.png');
+    background-size: 244px;
+
+  }
+  .views-view-grid td article[about^='/searching-order-two-registration-events'] {
+    background-image: url('../../images/registration-event-icons-white.png');
+  }
+  .views-view-grid td article[about^='/searching-point-time'] {
+    background-image: url('../../images/clock-icon-white.png');
+  }
+  .views-view-grid td article[about^='/retrieve-search-results'] {
+    background-image: url('../../images/create-registration-icon-white.png');
+  }
+  .views-view-grid td article[about^='/search-certificate-request-and-reissue'] {
+    background-image: url('../../images/create-registration-icon-white.png');
+  }
+  .views-view-grid td article[about^='/understanding-search-results'] {
+    background-image: url('../../images/help-icon-white.png');
+  }
+  .views-view-grid td article[about^='/searching-ppsr-migrated-registrations'] {
+    background-image: url('../../images/migrated-registration-icon-white.png');
+    background-size: 200px;
   }
   .panel-panel .pane-block {
     border: 1px solid #909090;
@@ -1271,5 +1330,6 @@ tr.selected td {
     background-image: url("../../images/white-chevron.png");
   }
   .panel-panel .pane-block p {
-    margin: .8em 0 3em 0;
+    margin: 1em 0 0 0;
+    display: inline-block;
   }
