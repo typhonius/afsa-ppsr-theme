@@ -580,6 +580,8 @@ table {
 }
 .pane-block ul, .pane-views ul {
   list-style: outside none none;
+  padding-left: 0px;
+  margin: 0px;
 }
 .pane-block a, .pane-views a,
 .front .pane-latest-news a {
