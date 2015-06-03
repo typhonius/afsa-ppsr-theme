@@ -604,10 +604,6 @@ span.field-label {
 .sidebar-first .block-menu-block a:hover, .sidebar-first .block-menu-block a:focus {
   background-color: transparent;
 }
-.sidebar-first .block-menu-block .menu-block-wrapper {
-  background: url("../../images/header-bkg.png") no-repeat scroll 5% 110% #EAF0F3;
-  padding-bottom: 10em;
-}
 .sidebar-first .block-menu-block .menu__item {
   border-bottom: 1px solid #EAF0F3;
   padding: 1em 0 1em 0;
@@ -1213,11 +1209,10 @@ tr.selected td {
   .views-view-grid .node__title a {
     color: #333333;
     text-decoration: none;
-    font-weight: bold;
     display: inline;
-    background: transparent url("../../images/double-chevron-icon-green.png") no-repeat scroll right center / 34px auto;
-    padding-right: 1.5em;
-    font-size: 1.4em;
+    background: transparent url("../../images/double-chevron-icon-green.png") no-repeat scroll right center / 30px auto;
+    padding-right: 1.2em;
+    font-size: 1.2em;
     line-height: 1;
   }
   .views-view-grid .node__title a:hover, .views-view-grid .node__title a:focus {
@@ -1228,9 +1223,11 @@ tr.selected td {
     background: -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
     background: -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
     background: -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
-    background: linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
-    
+    background: linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */ 
     border: 1px solid #FFFFFF;
+  }
+  table.views-view-grid p {
+    margin: .5em 0;
   }
   table.views-view-grid {
     border-collapse: separate;
@@ -1243,15 +1240,12 @@ tr.selected td {
     background-position: right bottom;
   }
 /* Specific background image for Search the Register page.*/
-.page-search-the-ppsr .views-view-grid {
-  border-collapse: collapse;
-}
-.page-search-the-ppsr .views-view-grid td article{
-  min-height: 260px;
-}
-.page-search-the-ppsr .views-view-grid td article:hover {
-  background-color: #EAEAEA;
-}
+  .page-search-the-ppsr .views-view-grid {
+    border-collapse: collapse;
+  }
+  .page-search-the-ppsr .views-view-grid td article:hover {
+    background-color: #EAEAEA;
+  }
   .views-view-grid td article[about^='/searching-motor-vehicles'] {
     background-image: url('../../images/car-icon-white.png');
     background-size: 234px;
@@ -1272,7 +1266,6 @@ tr.selected td {
   .views-view-grid td article[about^='/searching-ppsr-registration-number'] {
     background-image: url('../../images/registration-number-icon-white.png');
     background-size: 244px;
-
   }
   .views-view-grid td article[about^='/searching-order-two-registration-events'] {
     background-image: url('../../images/registration-event-icons-white.png');
@@ -1281,7 +1274,8 @@ tr.selected td {
     background-image: url('../../images/clock-icon-white.png');
   }
   .views-view-grid td article[about^='/retrieve-search-results'] {
-    background-image: url('../../images/create-registration-icon-white.png');
+    background-image: url('../../images/serial-number-icon-white.png');
+    background-size: 244px;
   }
   .views-view-grid td article[about^='/search-certificate-request-and-reissue'] {
     background-image: url('../../images/create-registration-icon-white.png');
@@ -1296,7 +1290,7 @@ tr.selected td {
   .panel-panel .pane-block {
     border: 1px solid #909090;
     padding: 0px 1em 1em;
-    margin: 0px;
+    margin: .5em 0 0 0;
   }
   .panel-panel .pane-block h2 {
     width: 100%;

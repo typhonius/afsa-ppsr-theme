@@ -186,6 +186,14 @@
     width: 100%;
     float: left;
   }
+  .panel-3col-33-stacked .panel-col, 
+  .panel-3col-33-stacked .panel-col-last,
+  .panel-3col-33-stacked .panel-col-first {
+    width: 100%;
+  }
+  .inside {
+    margin: .4em 0 !important;
+  }
 }
 
 /* Footer region */
@@ -211,127 +219,12 @@
   }
 }
 
-/**
- * Use 3 grid columns for smaller screens.
- */
-@media all and (min-width: 480px) and (max-width: 959px) {
 
-  /**
-   * The layout when there is only one sidebar, the left one.
-   */
-
-  /* Span 2 columns, starting in 2nd column from left. */
-  .sidebar-first #content {
-    float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
-  }
-
-  /* Span 1 column, starting in 1st column from left. */
-  .sidebar-first .region-sidebar-first {
-    float: left;
-    width: 33.33333%;
-    margin-left: 0%;
-    margin-right: -33.33333%;
-  }
-
-  /**
-   * The layout when there is only one sidebar, the right one.
-   */
-
-  /* Span 2 columns, starting in 1st column from left. */
-  .sidebar-second #content {
-    float: left;
-    width: 66.66667%;
-    margin-left: 0%;
-    margin-right: -66.66667%;
-  }
-
-  /* Span 1 column, starting in 3rd column from left. */
-  .sidebar-second .region-sidebar-second {
-    float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
-    margin-right: -100%;
-  }
-
-  /**
-   * The layout when there are two sidebars.
-   */
-
-  /* Span 2 columns, starting in 2nd column from left. */
-  .two-sidebars #content {
-    float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
-  }
-
-  /* Span 1 column, starting in 1st column from left. */
-  .two-sidebars .region-sidebar-first {
-    float: left;
-    width: 33.33333%;
-    margin-left: 0%;
-    margin-right: -33.33333%;
-  }
-
-  /* Start a new row and span all 3 columns. */
-  .two-sidebars .region-sidebar-second {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 0;
-    padding-right: 0;
-    clear: left;
-  }
-
-  /* Apply the shared properties of grid items in a single, efficient ruleset. */
-  .two-sidebars .region-sidebar-second .block {
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/path/to/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-
-  /* Span 1 column, starting in the 1st column from left. */
-  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
-    float: left;
-    width: 33.33333%;
-    margin-left: 0%;
-    margin-right: -33.33333%;
-    clear: left;
-  }
-
-  /* Span 1 column, starting in the 2nd column from left. */
-  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
-    float: left;
-    width: 33.33333%;
-    margin-left: 33.33333%;
-    margin-right: -66.66667%;
-  }
-
-  /* Span 1 column, starting in the 3rd column from left. */
-  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
-    float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
-    margin-right: -100%;
-  }
-}
 
 /**
  * Use 5 grid columns for larger screens.
  */
-@media all and (min-width: 960px) {
+@media all and (min-width: 800px) {
 
   /**
    * The layout when there is only one sidebar, the left one.
@@ -353,7 +246,10 @@
     margin-right: -25%;
     margin-top: .7em;
   }
-
+.sidebar-first .block-menu-block .menu-block-wrapper {
+  background: url("../../images/header-bkg.png") no-repeat scroll 5% 110% #EAF0F3;
+  padding-bottom: 10em;
+}
   /**
    * The layout when there is only one sidebar, the right one.
    */
@@ -456,6 +352,10 @@
     white-space: pre-wrap;
     font-size: 2.25em;
   }
+  .page-search-the-ppsr .views-view-grid td article{
+    min-height: 260px;
+    max-width: 240px;
+  }
 }
 @media all and (max-width: 799px) {
   .front .home-summary {
@@ -483,19 +383,19 @@
     height: 5em;
   }
   .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child {
-    top: 36em;
+    top: 37em;
     left: .6em;
   }
   .front.not-logged-in .center-wrapper .panel-col-last .pane-block:first-child {
-    top: 36em;
+    top: 37em;
     left: 50%;
   }
   .front.not-logged-in .center-wrapper .panel-col-last .pane-block:nth-child(2){
-    top: 42.5em;
+    top: 43.5em;
     left: 50%;
   }
   .front.not-logged-in .center-wrapper .panel-col .pane-block:nth-child(2) {
-    top: 42.5em;
+    top: 43.5em;
     left: .6em;
   }
   .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {
@@ -522,6 +422,27 @@
   .front .center-wrapper .panel-col .pane-block li a,
   .front .center-wrapper .panel-col-last .pane-block li a {
       background-image: none !important;
+  }
+  .sidebar-first .block-menu-block .menu-block-wrapper {
+  padding-bottom: 1.5em;
+  }
+  .sidebar-first .block-menu-block h2 {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border: 1px dotted #CCCCCC;
+  }
+  .breadcrumb {
+    margin: -2em 0;
+  }
+  .front .pane-professionals {
+    margin: 0 -1em 0 .5em !important;
+  }
+  .front .pane-business {
+    margin: 0 -.5em 0 .5em !important;
+  }
+  .front .pane-individuals {
+    margin: 0 -.5em 0 0 !important;
   }
 }
 @media all and (max-width: 499px) {
