@@ -180,6 +180,36 @@ a:hover {
   outline: 0;
 }
 
+/* Include document image icons for links. */
+.not-logged-in .file img {
+  display: none;
+}
+a[href$='.pdf'], a[href$='.PDF'] {
+  padding-left: 1.2em;
+  background: transparent url("/modules/file/icons/application-pdf.png") no-repeat scroll left center;
+}
+a[href$='.xls'], a[href$='.XLS'],
+a[href$='.xlsx'], a[href$='.XLSX'] {
+  padding-left: 1.2em;
+  background: transparent url("/modules/file/icons/x-office-spreadsheet.png") no-repeat scroll left center;
+}
+a[href$='.doc'], a[href$='.DOC'],
+a[href$='.docx'], a[href$='.DOCX'],
+a[href$='.txt'], a[href$='.TXT'],
+a[href$='.rtf'], a[href$='.RTF'] {
+  padding-left: 1.2em;
+  background: transparent url("/modules/file/icons/x-office-document.png") no-repeat scroll left center;
+}
+a[href$='.xsd'], a[href$='.XSD'],
+a[href$='.xml'], a[href$='.XML'] {
+  padding-left: 1.2em;
+  background: transparent url("/modules/file/icons/text-x-script.png") no-repeat scroll left center;
+}
+a[href$='.zip'], a[href$='.ZIP'],
+a[href$='.zipx'], a[href$='.ZIPX'] {
+  padding-left: 1.2em;
+  background: transparent url("/modules/file/icons/package-x-generic.png") no-repeat scroll left center;
+}
 /**
  * Typography
  *
