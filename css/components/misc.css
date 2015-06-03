@@ -592,6 +592,17 @@ span.field-label {
   background-color: #15505F;
   text-decoration: underline;
 }
+/* Search page form */
+.search-form {
+  margin-top: 1em;
+}
+li.search-result {
+    background-color: #EAEAEA;
+    padding: .5em;
+}
+.search-info {
+  display: none;
+}
 /**
  * Menus.
  */
