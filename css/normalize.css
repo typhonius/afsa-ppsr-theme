@@ -621,6 +621,17 @@ table {
   background: transparent url("../images/light-grey-chevron.png") no-repeat scroll right center;
   padding-right: 0.3em;
 }
+#main .pane-block li a[href^="https://transact.ppsr.gov.au/"], 
+#main .pane-views li a[href^="https://transact.ppsr.gov.au/"] {
+  background: transparent url("../images/register-icon-green.png") no-repeat scroll right center / 20px auto;
+  padding-right: 0.3em;
+}
+#main .pane-block li a[href^="https://transact.ppsr.gov.au/"]:hover, 
+#main .pane-views li a[href^="https://transact.ppsr.gov.au/"]:hover,
+#main .pane-block li a[href^="https://transact.ppsr.gov.au/"]:focus, 
+#main .pane-views li a[href^="https://transact.ppsr.gov.au/"]:focus {
+  background-color: #006171;
+}
 .pane-block h2 a, .pane-views h2 a,
 .front .pane-latest-news h2 a {
   background: transparent url("../images/grey-chevron.png") no-repeat scroll right center;
