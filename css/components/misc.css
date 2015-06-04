@@ -1073,7 +1073,6 @@ tr.selected td {
     padding: .5em 1em 0 1em;
     margin: 0;
     border-bottom: 1px solid #FFFFFF;
-    min-height: 329px;
     overflow: hidden;
   }
   .front .home-summary p {
@@ -1138,7 +1137,6 @@ tr.selected td {
   }
   .front .center-wrapper .panel-col .pane-block,
   .front .center-wrapper .panel-col-last .pane-block {
-    margin: 0;
     background-color: #DAF0F6;
   }
   .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child,
@@ -1338,3 +1336,71 @@ tr.selected td {
     margin: 1em 0 0 0;
     display: inline-block;
   }
+/* Announcements - critical notices */
+.pane-announcements {
+  border: 6px solid #F37D61;
+  background: #FDEBE6 url("../../images/cone-background.png") no-repeat scroll -10% 10%;;
+}
+.pane-announcements h2.pane-title {
+  color: #FFFFFF;
+  background-color: #C62B09;
+  background: -webkit-linear-gradient(center bottom, #F3735B, #C62B09); /* For Safari */
+  background: -o-linear-gradient(top center, #F3735B, #C62B09); /* For Opera */
+  background: -moz-linear-gradient(top center, #F3735B, #C62B09); /* For Opera */
+  background: linear-gradient(to top center, #F3735B, #C62B09); /* Standard syntax (must be LAST) */
+  margin: 0;
+  padding: .5em 1em;
+  font-size: .9em;
+}
+.view-announcements .node-title,
+.view-announcements .node-title a {
+  color: #C62B09;
+  background-image: none;
+  border-bottom: 2px solid #C62B09;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+}
+.view-announcements p, .view-announcements li {
+  font-size: .9em
+}
+.view-announcements .field-name-field-link-to {
+  background-image: url("../../images/white-chevron.png");
+  background-color: #006171;
+  background-image: url("../../images/white-chevron.png"), -webkit-linear-gradient(left bottom, #333333, #006171); /* For Safari */
+  background-image: url("../../images/white-chevron.png"), -o-linear-gradient(top right, #333333, #006171); /* For Opera */
+  background-image: url("../../images/white-chevron.png"), -moz-linear-gradient(top right, #333333, #006171); /* For Opera */
+  background-image: url("../../images/white-chevron.png"), linear-gradient(to top right, #333333, #006171); /* Standard syntax (must be LAST) */
+  background-position: 94% center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  float: right;
+  padding: .5em 1.5em .5em 1em;
+}
+.view-announcements .field-name-field-link-to:hover {
+  background-image: url("../../images/white-chevron.png");
+  background-color: #333333;
+  background-image: url("../../images/white-chevron.png"), -webkit-linear-gradient(right top, #333333, #006171); /* For Safari */
+  background-image: url("../../images/white-chevron.png"), -o-linear-gradient(bottom left, #333333, #006171); /* For Opera */
+  background-image: url("../../images/white-chevron.png"), -moz-linear-gradient(bottom left, #333333, #006171); /* For Opera */
+  background-image: url("../../images/white-chevron.png"), linear-gradient(to bottom left, #333333, #006171); /* Standard syntax (must be LAST) */
+}
+.view-announcements .field-name-field-link-to a {
+  background-image: none;
+  color: #FFFFFF;
+}
+.view-announcements .field-name-field-event-date {
+  color: #454B56;
+  font-size: 1.3em;
+  font-weight: normal;
+  padding-top: 1em;
+}
+.view-announcements .field-name-field-event-date .date-display-single::after {
+  content: "  (AEST | Canberra time)";
+}
+.view-announcements .field-label {
+  font-weight: normal;
+}
+.feed a {
+  background-image: none;
+  margin: 2px;
+}
