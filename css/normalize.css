@@ -200,8 +200,7 @@ a[href$='.rtf'], a[href$='.RTF'] {
   padding-left: 1.2em;
   background: transparent url("/modules/file/icons/x-office-document.png") no-repeat scroll left center;
 }
-a[href$='.xsd'], a[href$='.XSD'],
-a[href$='.xml'], a[href$='.XML'] {
+a[href$='.xsd'], a[href$='.XSD'] {
   padding-left: 1.2em;
   background: transparent url("/modules/file/icons/text-x-script.png") no-repeat scroll left center;
 }
