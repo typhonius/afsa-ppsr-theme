@@ -1355,7 +1355,7 @@ tr.selected td {
 /* Announcements - critical notices */
 .pane-announcements {
   border: 6px solid #F37D61;
-  background: #FDEBE6 url("../../images/cone-background.png") no-repeat scroll -10% 10%;;
+  background: #FDEBE6 url("../../images/cone-background.png") no-repeat scroll -10% 10%;
 }
 .pane-announcements h2.pane-title {
   color: #FFFFFF;
