@@ -626,12 +626,6 @@ table {
   background: transparent url("../images/register-icon-green.png") no-repeat scroll right center / 20px auto;
   padding-right: 0.3em;
 }
-#main .pane-block li a[href^="https://transact.ppsr.gov.au/"]:hover, 
-#main .pane-views li a[href^="https://transact.ppsr.gov.au/"]:hover,
-#main .pane-block li a[href^="https://transact.ppsr.gov.au/"]:focus, 
-#main .pane-views li a[href^="https://transact.ppsr.gov.au/"]:focus {
-  background-color: #006171;
-}
 .pane-block h2 a, .pane-views h2 a,
 .front .pane-latest-news h2 a {
   background: transparent url("../images/grey-chevron.png") no-repeat scroll right center;
@@ -691,11 +685,46 @@ table {
   font-size: 1.5em;
   font-weight: bold;
 }
-
 /* The footer */
 #footer, #footer a {
   color: #FFFFFF;
 }
 .region-bottom {
   color: #444A55;
+}
+/* Glossary */
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.page-glossary .item-list ol {
+  list-style: outside none none;
+}
+.page-glossary .view-id-glossary {
+  padding: 1em;
+  border-top: #454B56 2px solid;
+  border-bottom: #454B56 2px solid;
+}
+.page-glossary .item-list ol li.views-row-even {
+  margin: .5em 0;
+  background-color: #D8EFF7;
+  padding: .5em;
+}
+.page-glossary .item-list ol li.views-row-odd {
+  margin: .5em 0;
+  background-color: #F5FBFD;
+  padding: .5em;
+}
+.page-glossary .field-content ol {
+  list-style: decimal inside;
+}
+.page-glossary .views-label-field-link-to {
+  font-weight: bold;}
+.page-glossary .views-field-field-link-to {
+  margin: 1em 0;
+  border: 1px dotted #666666;
+  padding: 1em;
+  background-color: #FBFBFB;
 }

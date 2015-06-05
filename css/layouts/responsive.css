@@ -404,6 +404,7 @@
   }
   .view-announcements {
     padding: 1em;
+    text-shadow: 1px 1px 3px #FFFFFF;
   }
 }
 @media all and (max-width: 499px) {
