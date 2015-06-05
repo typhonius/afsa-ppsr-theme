@@ -700,7 +700,8 @@ table {
   float: left;
 }
 .page-glossary .item-list ol {
-  list-style: outside none none;
+  list-style: outside decimal none;
+  padding: 0;
 }
 .page-glossary .view-id-glossary {
   padding: 1em;
