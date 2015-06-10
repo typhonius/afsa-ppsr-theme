@@ -181,7 +181,8 @@ a:hover {
 }
 
 /* Include document image icons for links. */
-.not-logged-in .file img {
+.not-logged-in .file .file-icon,
+.logged-in .file .file-icon {
   display: none;
 }
 a[href$='.pdf'], a[href$='.PDF'] {
@@ -728,4 +729,37 @@ table {
   border: 1px dotted #666666;
   padding: 1em;
   background-color: #FBFBFB;
+}
+/* Release Management and Enhancement list */
+.page-enhancements-list table td,
+.page-enhancements-list table th,
+.section-releases .panel-pane table td,
+.section-releases .panel-pane table th,
+.page-release-management .pane-views table td,
+.page-release-management .pane-views table th {
+  padding: .5em;
+  text-align: left;
+  border: 1px solid #666666;
+} 
+.page-enhancements-list table th,
+.section-releases .panel-pane table th, 
+.page-release-management .pane-views table th {
+  background-color: #F5FBFD;
+  font-size: .9em;
+}
+.page-enhancements-list table,
+.section-releases .panel-pane table,
+.page-release-management .pane-views table {
+  width: 100%;
+  margin: 0;
+}
+.paragraphs-item-release-task {
+  margin: .5em 0;
+  background-color: #F5FBFD;
+}
+.paragraphs-item-release-task .content {
+  padding: .5em;
+}
+.paragraphs-item-release-task .content div {
+  margin: .5em;
 }
