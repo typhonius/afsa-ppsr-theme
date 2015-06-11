@@ -740,18 +740,28 @@ table {
   padding: .5em;
   text-align: left;
   border: 1px solid #666666;
+  vertical-align: top;
 } 
+.page-enhancements-list table td p,
+.page-enhancements-list table th p,
+.section-releases .panel-pane table td p,
+.section-releases .panel-pane table th p,
+.page-release-management .pane-views table td p,
+.page-release-management .pane-views table th p {
+  margin: 0 0 .5em 0;
+}
 .page-enhancements-list table th,
 .section-releases .panel-pane table th, 
 .page-release-management .pane-views table th {
   background-color: #F5FBFD;
   font-size: .9em;
+  white-space: nowrap;
 }
 .page-enhancements-list table,
 .section-releases .panel-pane table,
 .page-release-management .pane-views table {
   width: 100%;
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 .paragraphs-item-release-task {
   margin: .5em 0;
