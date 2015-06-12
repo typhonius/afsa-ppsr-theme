@@ -772,6 +772,10 @@ table td p, table th p {
 }
 /* Styles for accordion dropdown */
 .accordion h3 {
-  padding: .2em 2em;
+  padding: .3em 2em;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+}
+.ui-helper-reset {
+  font-size: .9em;
 }
