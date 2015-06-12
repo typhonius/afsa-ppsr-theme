@@ -609,6 +609,7 @@ div.toc-filter-back-to-top a:visited {
   background-color: #343942;
   text-decoration: none;
   padding: .5em;
+  font-size: .8em;
 }
 div.toc-filter-back-to-top a:hover, 
 div.toc-filter-back-to-top a:focus {
@@ -624,14 +625,19 @@ div.toc-filter-content ul, div.toc-filter-content ol {
   list-style-position: inside;
   padding: 0;
 }
+div.toc-filter-content ul{
+  list-style: none;
+}
 div.toc-filter-content li {
   background: transparent url("../images/grey-chevron.png") no-repeat scroll right center;
-  padding: 0.5em 0px;
   border-bottom: 1px solid #909090;
 }
 div.toc-filter-content a {
   color: #454B56;
+  padding: 0.5em 0px;
   text-decoration: none;
+  display: inline-table;
+  width: 94%;
 }
 div.toc-filter-content a:hover,
 div.toc-filter-content a:focus {
