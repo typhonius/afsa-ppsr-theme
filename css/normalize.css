@@ -587,6 +587,12 @@ table {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+table td, table th {
+  vertical-align: top;
+}
+table td p, table th p {
+  margin: 0 0 .5em 0;
+}
 .views-view-grid td {
   vertical-align: top;
 }
@@ -740,16 +746,7 @@ table {
   padding: .5em;
   text-align: left;
   border: 1px solid #666666;
-  vertical-align: top;
 } 
-.page-enhancements-list table td p,
-.page-enhancements-list table th p,
-.section-releases .panel-pane table td p,
-.section-releases .panel-pane table th p,
-.page-release-management .pane-views table td p,
-.page-release-management .pane-views table th p {
-  margin: 0 0 .5em 0;
-}
 .page-enhancements-list table th,
 .section-releases .panel-pane table th, 
 .page-release-management .pane-views table th {
@@ -772,4 +769,9 @@ table {
 }
 .paragraphs-item-release-task .content div {
   margin: .5em;
+}
+/* Styles for accordion dropdown */
+.accordion h3 {
+  padding: .2em 2em;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
 }
