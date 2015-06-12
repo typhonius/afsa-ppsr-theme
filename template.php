@@ -37,7 +37,7 @@ function ppsr_theme_preprocess_maintenance_page(&$variables, $hook) {
 function ppsr_theme_preprocess_html(&$variables, $hook) {
   drupal_add_css('http://fonts.googleapis.com/css?family=Oswald:300,400,700', 'external');
   drupal_add_library('system', 'ui.accordion');
-  drupal_add_js('jQuery(document).ready(function(){jQuery(".accordion").accordion()});','inline');
+  drupal_add_js('jQuery(document).ready(function(){jQuery(".accordion").accordion({autoHeight: false, collapsible: true, active: false})});','inline');
 }
 /* -- Delete this line if you want to use this function
 function ppsr_theme_preprocess_html(&$variables, $hook) {
