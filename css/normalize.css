@@ -158,7 +158,7 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-  color: #165696;
+  color: #006272;
 }
 a:visited {
 }
@@ -229,7 +229,7 @@ blockquote {
 .region-header, .block-title, .pane-block h2,
 .rs-slideshow,.home-summary h2, .pane-views h2,
 .pane-latest-news h2, #navigation, .menu-block-wrapper,
-.region-bottom {
+.region-bottom, .item-list h3 {
   font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 .home-summary h2, .pane-views h2, .pane-block h2, .pane-latest-news h2,
@@ -603,7 +603,48 @@ table td p, table th p {
 .toc-header .toc-number {
   display: none;
 }
-
+div.toc-filter-back-to-top a:link, 
+div.toc-filter-back-to-top a:visited {
+  color: #FFFFFF;
+  background-color: #343942;
+  text-decoration: none;
+  padding: .5em;
+}
+div.toc-filter-back-to-top a:hover, 
+div.toc-filter-back-to-top a:focus {
+  background-color: #4E545E;
+  text-decoration: underline;
+}
+div.toc-filter-content {
+  background-color: #FFFFFF;
+  border: 1px solid #909090;
+  padding: 1em;
+}
+div.toc-filter-content ul, div.toc-filter-content ol {
+  list-style-position: inside;
+  padding: 0;
+}
+div.toc-filter-content li {
+  background: transparent url("../images/grey-chevron.png") no-repeat scroll right center;
+  padding: 0.5em 0px;
+  border-bottom: 1px solid #909090;
+}
+div.toc-filter-content a {
+  color: #454B56;
+  text-decoration: none;
+}
+div.toc-filter-content a:hover,
+div.toc-filter-content a:focus {
+  text-decoration: underline;
+}
+div.toc-filter-content h3 {
+  width: 100%;
+  display: block;
+  border-bottom: 3px solid #909090;
+  margin: 0.5em 0;
+  color: #454B56;
+  font-weight: 400;
+}
 /**
  * Pane Block, Pane Views
  */
