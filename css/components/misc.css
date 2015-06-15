@@ -538,6 +538,7 @@ span.field-label {
   padding: .5em 1.5em .5em 1em;
 }
 .region-header a[href*="ppsr/SearchLanding"] {
+  background-color: #C62B09;
   background: url("../../images/register-icon-white.png") no-repeat scroll right center / 20px auto #C62B09;
   float: right;
   padding: .5em 2em .5em 1em;
@@ -596,7 +597,11 @@ li.search-result {
     padding: .5em;
 }
 .search-info {
-  display: none;
+  text-align: right;
+  font-weight: bold;
+}
+.search-info::before {
+  content: "Last updated: "
 }
 /**
  * Menus.
@@ -1077,6 +1082,7 @@ tr.selected td {
     margin: 0.7em -1em -16% -1em !important;
     max-width: 350px;
     max-height: 165px;
+    float: right;
   }
   .front .home-summary a {
     background: #006171 url("../../images/gl-nav.gif") repeat-x scroll left bottom;
@@ -1273,8 +1279,7 @@ tr.selected td {
     background-image: url('../../images/grantor-icon-white.png');
   }
   .views-view-grid td article[about^='/searching-ppsr-registration-number'] {
-    background-image: url('../../images/registration-number-icon-white.png');
-    background-size: 244px;
+    background-image: url('../../images/create-registration-icon-white.png');
   }
   .views-view-grid td article[about^='/searching-order-two-registration-events'] {
     background-image: url('../../images/registration-event-icons-white.png');
