@@ -597,11 +597,7 @@ li.search-result {
     padding: .5em;
 }
 .search-info {
-  text-align: right;
-  font-weight: bold;
-}
-.search-info::before {
-  content: "Last updated: "
+  display: none;
 }
 /**
  * Menus.
@@ -1014,6 +1010,7 @@ tr.selected td {
 .rs-slideshow a:hover, .rs-slideshow a:focus,
 .rslides_tabs a:hover, .rslides_tabs a:focus  {
   text-decoration: underline;
+  background-color: transparent;
 }
 .rs-slideshow li {
   -webkit-backface-visibility: hidden;

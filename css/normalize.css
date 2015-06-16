@@ -662,12 +662,13 @@ div.toc-filter-content h3 {
   font-weight: normal;
   padding: .3em;
 }
-.pane-block ul, .pane-views ul {
+.pane-block ul {
   list-style: outside none none;
   padding-left: 0px;
   margin: 0px;
 }
-.pane-block a, .pane-views a,
+.pane-block a, .pane-professionals a,
+.pane-business a, .pane-individuals a,
 .front .pane-latest-news a {
   display: block;
   color: #454B56;
