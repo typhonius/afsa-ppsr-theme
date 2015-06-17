@@ -174,7 +174,7 @@ body {
   width: 32px;
   height: 32px;
   text-indent: -1000px;
-  background: url("../../images/youtube-icon.png") no-repeat scroll center center / 30px auto transparent;
+  background: transparent url("../../images/youtube-icon.png") no-repeat scroll center center;
   white-space: nowrap;
   overflow: hidden;
   margin-top: -0.5em;
@@ -1222,7 +1222,7 @@ tr.selected td {
     color: #333333;
     text-decoration: none;
     display: inline;
-    background: transparent url("../../images/double-chevron-icon-green.png") no-repeat scroll right center / 30px auto;
+    background: transparent url("../../images/double-chevron-icon-green.png") no-repeat scroll right center;
     padding-right: 1.2em;
     font-size: 1.2em;
     line-height: 1;
