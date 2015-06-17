@@ -299,7 +299,7 @@
 /**
  * Bottom panel of three column staked 33/34/33.
  */
-@media all and (min-width: 800px) {
+
   .front.logged-in .panel-col-bottom .panels-ipe-sort-container .panels-ipe-portlet-wrapper:nth-child(odd),
   .front.not-logged-in .panel-col-bottom .panel-pane:nth-child(odd) {
     width:62.4%;
@@ -320,7 +320,7 @@
     position: relative;
     padding: 5% 24% 0 5%;
   }
-}
+
 @media all and (max-width: 799px) {
   .rs-slideshow .field-name-field-read-more a {
     position: relative;
@@ -330,7 +330,7 @@
 /**
  * Middle panel of three column staked 33/34/33.
  */
-@media all and (min-width: 800px) {
+
   .front .home-summary {
     height: 328px;
   }
@@ -362,7 +362,7 @@
   .view-announcements {
     padding: 1em 1em 1em 18em;
   }
-}
+
 @media all and (max-width: 799px) {
   .front .home-summary {
     min-height: 234px;
