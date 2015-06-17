@@ -222,7 +222,7 @@ li.active-trail .sf-no-children {
 #navigation .links a[href$="need-help"],
 #navigation .menu a[href$="need-help"] {
   /* Need help icon display */
-  background: url("../../images/qn-icon.png") no-repeat scroll right 9px / 20px auto transparent;
+  background: transparent url("../../images/qn-icon.png") no-repeat scroll right 9px;
   padding-right: 1.3em;
   padding-top: .3em;
   margin-top: -.3em;

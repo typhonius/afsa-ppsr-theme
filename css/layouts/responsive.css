@@ -101,7 +101,7 @@
   #navigation .links a[href="/"], 
   #navigation .menu a[href="/"] {
   /* Home icon display */
-  background: url("../../images/home.png") no-repeat scroll center 9px / 20px auto transparent;
+  background: transparent url("../../images/home.png") no-repeat scroll center 9px;
   width: 1.8em;
   height: 1.3em;
   display: block;
@@ -222,7 +222,7 @@
 /**
  * Use 5 grid columns for larger screens.
  */
-@media all and (min-width: 800px) {
+
 
   /**
    * The layout when there is only one sidebar, the left one.
@@ -295,7 +295,7 @@
     margin-left: 80%;
     margin-right: -100%;
   }
-}
+
 /**
  * Bottom panel of three column staked 33/34/33.
  */
