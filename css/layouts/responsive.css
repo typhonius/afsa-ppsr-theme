@@ -62,7 +62,6 @@
 }
 
 /* Navigation bar */
-@media all and (min-width: 800px) {
   #main, #content {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
@@ -113,7 +112,6 @@
     min-height: 150px;
     float: left;
   }
-}
 
 @media only screen and (max-width: 799px) {
   #header {
