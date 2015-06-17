@@ -538,8 +538,7 @@ span.field-label {
   padding: .5em 1.5em .5em 1em;
 }
 .region-header a[href*="ppsr/SearchLanding"] {
-  background-color: #C62B09;
-  background: url("../../images/register-icon-white.png") no-repeat scroll right center / 20px auto #C62B09;
+  background: #C62B09 url("../../images/register-icon-white.png") no-repeat scroll right center;
   float: right;
   padding: .5em 2em .5em 1em;
   border-right: .5em solid #C62B09;
@@ -1128,7 +1127,7 @@ tr.selected td {
     padding-right: 1.5em;
   }
   .front .center-wrapper a[href^="https://transact.ppsr.gov.au/"] {
-    background: url("../../images/register-icon-white.png") no-repeat scroll right center / 20px auto #C62B09 !important;
+    background: #C62B09 url("../../images/register-icon-white.png") no-repeat scroll right center !important;
     padding: 2px 1.5em 0 0;
     white-space: nowrap;
   }
@@ -1336,7 +1335,6 @@ tr.selected td {
     float: left;
     background-image: url("../../images/register-icon-white.png");
     background-color: #C62B09;
-    background-size: 20px auto;
     background-position: 94% center;
     background-attachment: scroll;
     background-repeat: no-repeat;
