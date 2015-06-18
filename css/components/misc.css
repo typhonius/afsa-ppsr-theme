@@ -1412,6 +1412,12 @@ tr.selected td {
 .view-announcements .field-name-field-link-to a {
   background-image: none;
   color: #FFFFFF;
+  text-decoration: none;
+}
+.view-announcements .field-name-field-link-to a:hover,
+.view-announcements .field-name-field-link-to a:focus {
+  background-color: transparent;
+  text-decoration: underline;
 }
 .view-announcements .field-name-field-event-date {
   color: #454B56;
