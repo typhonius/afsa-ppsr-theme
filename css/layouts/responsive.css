@@ -222,7 +222,7 @@
 /**
  * Use 5 grid columns for larger screens.
  */
-
+@media all and (min-width: 800px) {
 
   /**
    * The layout when there is only one sidebar, the left one.
@@ -295,7 +295,7 @@
     margin-left: 80%;
     margin-right: -100%;
   }
-
+}
 /**
  * Bottom panel of three column staked 33/34/33.
  */
