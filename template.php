@@ -35,7 +35,7 @@ function ppsr_theme_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("html" in this case.)
  */
 function ppsr_theme_preprocess_html(&$variables, $hook) {
-  drupal_add_css('https://fonts.googleapis.com/css?family=Oswald:300,400,700', 'external');
+  drupal_add_css('//fonts.googleapis.com/css?family=Oswald:300,400,700', 'external');
   drupal_add_library('system', 'ui.accordion');
   drupal_add_js('jQuery(document).ready(function(){jQuery(".accordion").accordion({autoHeight: false, collapsible: true, active: false})});','inline');
 }
@@ -59,7 +59,7 @@ function ppsr_theme_preprocess_html(&$variables, $hook) {
  */
 function ppsr_theme_preprocess_page(&$variables, $hook) {
   if(drupal_is_front_page()) {
-    drupal_add_js('sites/all/themes/ppsr_theme/js/news-feed.js', array('scope' => 'footer'));
+    drupal_add_js(drupal_get_path('theme','ppsr_theme') . '/js/news-feed.js', array('scope' => 'footer'));
     drupal_add_js('google.load("feeds", "1");', 'inline');
     drupal_add_js('window.onload=function() {rssfeedsetup()}','inline');
   }
