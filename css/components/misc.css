@@ -1413,6 +1413,7 @@ tr.selected td {
   background-image: none;
   color: #FFFFFF;
   text-decoration: none;
+  padding-right: 1em;
 }
 .view-announcements .field-name-field-link-to a:hover,
 .view-announcements .field-name-field-link-to a:focus {
