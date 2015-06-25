@@ -77,4 +77,31 @@
     visibility: hidden;
     display: none;
   }
+
+  /**
+   * Hide items from print
+   */
+  .block-search-api-page, #block-block-6, #block-block-31 {
+    display: none;
+  }
+
+  /**
+   * Expand accordian on printed pages
+   */
+  .ui-accordion-content {
+    background: none !important;
+    display: block !important;
+    border-top: 0 !important;
+  }
+  .ui-accordion-header {
+    border-top: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-left: 1px solid #aaaaaa;
+    background: #ffffff none !important;
+    font-weight: normal;
+    color: #212121;
+  }
+  .ui-corner-bottom, .ui-corner-top, .ui-corner-all {
+    border-radius: 0 !important;
+  }
 }
