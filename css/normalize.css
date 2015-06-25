@@ -139,7 +139,7 @@ textarea {
    * font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
    * font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
    * font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
-   * 
+   *
    * font-family: "Courier New", "DejaVu Sans Mono", monospace;
    */
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -161,6 +161,7 @@ a:link {
   color: #006272;
 }
 a:visited {
+  color: #551A8B;
 }
 a:hover,
 a:focus {
@@ -603,7 +604,7 @@ table td p, table th p {
 .toc-header .toc-number {
   display: none;
 }
-div.toc-filter-back-to-top a:link, 
+div.toc-filter-back-to-top a:link,
 div.toc-filter-back-to-top a:visited {
   color: #FFFFFF;
   background-color: #343942;
@@ -611,7 +612,7 @@ div.toc-filter-back-to-top a:visited {
   padding: .5em;
   font-size: .8em;
 }
-div.toc-filter-back-to-top a:hover, 
+div.toc-filter-back-to-top a:hover,
 div.toc-filter-back-to-top a:focus {
   background-color: #4E545E;
   text-decoration: underline;
@@ -676,7 +677,7 @@ div.toc-filter-content h3 {
   background: transparent url("../images/light-grey-chevron.png") no-repeat scroll right center;
   padding-right: 0.3em;
 }
-#main .pane-block li a[href^="https://transact.ppsr.gov.au/"], 
+#main .pane-block li a[href^="https://transact.ppsr.gov.au/"],
 #main .pane-views li a[href^="https://transact.ppsr.gov.au/"] {
   background: transparent url("../images/register-icon-green.png") no-repeat scroll right center / 20px auto;
   padding-right: 0.3em;
@@ -686,7 +687,7 @@ div.toc-filter-content h3 {
   background: transparent url("../images/grey-chevron.png") no-repeat scroll right center;
   padding-right: 0.3em;
 }
-.pane-block a:hover, .pane-views a:hover, 
+.pane-block a:hover, .pane-views a:hover,
 .pane-block a:focus, .pane-views a:focus,
 .front .pane-latest-news a:hover, .front .pane-latest-news a:focus {
   text-decoration: underline;
@@ -706,7 +707,7 @@ div.toc-filter-content h3 {
   font-weight: bold;
 }
 .front .center-wrapper .panel-col .pane-block li a,
-.front .center-wrapper .panel-col-last .pane-block li a{    
+.front .center-wrapper .panel-col-last .pane-block li a{
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -794,9 +795,9 @@ div.toc-filter-content h3 {
   padding: .5em;
   text-align: left;
   border: 1px solid #666666;
-} 
+}
 .page-enhancements-list table th,
-.section-releases .panel-pane table th, 
+.section-releases .panel-pane table th,
 .page-release-management .pane-views table th {
   background-color: #F5FBFD;
   font-size: .9em;
