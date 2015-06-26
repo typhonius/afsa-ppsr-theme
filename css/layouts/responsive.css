@@ -347,12 +347,10 @@
   .front .center-wrapper .panel-col .pane-block li,
   .front .center-wrapper .panel-col-last .pane-block li {
     width:45%;
-    min-width: 10em;
   }
   .front .center-wrapper .panel-col .pane-block li:first-child,
   .front .center-wrapper .panel-col-last .pane-block li:first-child {
     width: 84%;
-    min-width: 8em;
     word-wrap: normal;
     white-space: pre-wrap;
     font-size: 2.25em;
@@ -421,6 +419,23 @@
   .webform-component input[type="email"] {
     display: block;
     width: 100%;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 976px) {
+  .front .center-wrapper .panel-col .pane-block ul li:first-child a,
+  .front .center-wrapper .panel-col-last .pane-block ul li:first-child a{
+    padding-right: 0;
+    background-image: none;
+  }
+  .front #main .pane-block ul li a[href^="https://transact.ppsr.gov.au/"],
+  .front #main .pane-views ul li a[href^="https://transact.ppsr.gov.au/"] {
+    //background: none !important;
+  }
+  .front #main .pane-block ul li:nth-child(2) {
+    width: auto;
+    margin: -0.3em 0 0 0;
+    padding: 0.1em 0.25em;
   }
 }
 
