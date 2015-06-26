@@ -63,7 +63,6 @@
 
 /* Navigation bar */
   #main, #content {
-    /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
     background-color: #FFFFFF;
@@ -114,6 +113,10 @@
   }
 
 @media only screen and (max-width: 799px) {
+  #main, #content {
+    /* Move all the children of #main down to make room. */
+    padding-top: 0;
+  }
   #header {
     margin-top: 3.5em;
   }
