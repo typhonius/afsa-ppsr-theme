@@ -622,7 +622,7 @@ li.search-result {
   text-decoration: none;
   padding-right: 0.5em;
 }
-.menu__item a:hover, 
+.menu__item a:hover,
 .menu__item a:focus {
   text-decoration: underline;
 }
@@ -1031,7 +1031,7 @@ tr.selected td {
   right: 0;
   bottom: 0;
 }
-.rs-slideshow .field-name-title, 
+.rs-slideshow .field-name-title,
 .rs-slideshow .field-name-body,
 .rs-slideshow .field-name-node-link {
   padding: 1em 6em 1em 1em;
@@ -1141,7 +1141,7 @@ tr.selected td {
     background-color: #DAF0F6;
   }
   .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child,
-  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {    
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {
     background-image: url('../../images/help-icon-white.png');
     background-image: url('../../images/help-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
     background-image: url('../../images/help-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
@@ -1233,7 +1233,7 @@ tr.selected td {
     background: -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
     background: -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
     background: -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
-    background: linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */ 
+    background: linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
     border: 1px solid #FFFFFF;
   }
   table.views-view-grid p {
@@ -1342,7 +1342,7 @@ tr.selected td {
   #main .panel-panel .pane-block p a[href^="https://transact.ppsr.gov.au/"]:hover,
   #main .panel-panel .pane-block p a[href^="https://transact.ppsr.gov.au/"]:focus {
     background-color: #006171;
-  }  
+  }
   .panel-panel .pane-block p a:hover, .panel-panel .pane-block p a:focus {
     background-color: #006171;
     background-image: url("../../images/white-chevron.png");
@@ -1431,4 +1431,29 @@ tr.selected td {
 .feed a {
   background-image: none;
   margin: 2px;
+}
+/**
+ * Wysiwyg tables styles
+ */
+table caption {
+  font-weight: bold;
+  line-height: 2em;
+}
+
+table.teal-table th {
+  background-color: #125361;
+  color: white;
+  text-align: left;
+  padding: 4px;
+}
+
+table.grey-table th {
+  background-color: #4E545E;
+  color: white;
+  text-align: left;
+  padding: 4px;
+}
+
+table.grey-table td, table.teal-table td {
+  padding: 4px;
 }
