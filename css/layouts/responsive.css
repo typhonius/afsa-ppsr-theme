@@ -98,7 +98,7 @@
   #navigation .menu li > ul li:focus {
     background-color: #004752;
   }
-  #navigation .links a[href="/"], 
+  #navigation .links a[href="/"],
   #navigation .menu a[href="/"] {
   /* Home icon display */
   background: transparent url("../../images/home.png") no-repeat scroll center 9px;
@@ -184,7 +184,7 @@
     width: 100%;
     float: left;
   }
-  .panel-3col-33-stacked .panel-col, 
+  .panel-3col-33-stacked .panel-col,
   .panel-3col-33-stacked .panel-col-last,
   .panel-3col-33-stacked .panel-col-first {
     width: 100%;
@@ -206,7 +206,7 @@
   }
   .region-footer .block:first-child {
     width: 53%;
-  } 
+  }
 }
 @media all and (max-width: 799px) {
   .region-footer .block {
@@ -410,3 +410,14 @@
     font-size: .8em;
   }
 }
+/**
+ * Responsive webforms
+ */
+@media all and (max-width: 799px) {
+  .webform-component input[type="text"],
+  .webform-component input[type="email"] {
+    display: block;
+    width: 100%;
+  }
+}
+
