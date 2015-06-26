@@ -952,6 +952,15 @@ tr.selected td {
   background-image: url('../../images/progress.gif');
 }
 
+/**
+ * Accordian
+ * @see jquery.ui.accordian.css
+ */
+.ui-accordion .ui-accordion-header a {
+  padding: 0;
+}
+
+
 /* Slideshow */
 .rs-slideshow {
   position: relative;
