@@ -7,6 +7,45 @@
  * @see https://drupal.org/node/1728096
  */
 
+/*
+ * Re-theme output of task field in releases into a table.
+ */
+
+function ppsr_theme_preprocess_paragraphs_items(&$variables) {
+  if ($variables['field_name'] == 'field_task'){
+    $rows = [];
+    $header = [];
+    foreach ($variables['element'] as $element) {
+
+      if (is_array($element) && isset($element['entity'])){
+        $key = key($element['entity']['paragraphs_item']);
+        $item = $element['entity']['paragraphs_item'][$key];
+        $task_name = (isset($item['field_task_name']['0']['#markup']) ? check_markup($item['field_task_name']['0']['#markup']) : '');
+        $planned_date = (isset($item['field_planned_date']['0']['#markup']) ? $item['field_planned_date']['0']['#markup'] : '');
+        $field_status = (isset($item['field_status']['0']['#markup']) ? check_markup($item['field_status']['0']['#markup']) : '');
+        $row = array(
+          '0' => $task_name,
+          '1' => $planned_date,
+          '2' => $field_status,
+        );
+
+        array_push($rows, $row);
+
+        if (empty($header)) {
+          $header['0'] = t($item['field_task_name']['#title']);
+          $header['1'] = t($item['field_planned_date']['#title']);
+          $header['2'] = t($item['field_status']['#title']);
+        }
+      }
+
+    }
+
+    $variables['content'] = theme('table', array(
+        'header' => $header,
+        'rows' => $rows,
+    ));
+  }
+}
 
 /**
  * Override or insert variables into the maintenance page template.
