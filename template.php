@@ -13,8 +13,8 @@
 
 function ppsr_theme_preprocess_paragraphs_items(&$variables) {
   if ($variables['field_name'] == 'field_task'){
-    $rows = [];
-    $header = [];
+    $rows = array();
+    $header = array();
     foreach ($variables['element'] as $element) {
 
       if (is_array($element) && isset($element['entity'])){
