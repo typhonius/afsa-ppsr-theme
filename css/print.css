@@ -81,7 +81,7 @@
   /**
    * Hide items from print
    */
-  .block-search-api-page, #block-block-6, #block-block-31 {
+  .block-search-api-page, #block-block-6, #block-block-31, .header__region {
     display: none;
   }
 

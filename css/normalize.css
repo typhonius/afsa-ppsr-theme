@@ -202,7 +202,8 @@ a[href$='.rtf'], a[href$='.RTF'] {
   padding-left: 1.2em;
   background: transparent url("/modules/file/icons/x-office-document.png") no-repeat scroll left center;
 }
-a[href$='.xsd'], a[href$='.XSD'] {
+a[href$='.xsd'], a[href$='.XSD'],
+a[href$='.xml'], a[href$='.XML'] {
   padding-left: 1.2em;
   background: transparent url("/modules/file/icons/text-x-script.png") no-repeat scroll left center;
 }
@@ -211,6 +212,13 @@ a[href$='.zipx'], a[href$='.ZIPX'] {
   padding-left: 1.2em;
   background: transparent url("/modules/file/icons/package-x-generic.png") no-repeat scroll left center;
 }
+.field-name-body a[href^="https://www.youtube.com/"], .field-name-body a[href^="http://www.youtube.com/"],
+.field-name-body a[href$='.mp4'], .field-name-body a[href$='.mov'], .field-name-body a[href$='.avi'],
+.field-name-body a[href$='.MP4'], .field-name-body a[href$='.MOV'], .field-name-body a[href$='.AVI'] {
+  padding-left: 1.2em;
+  background: transparent url("/modules/file/icons/video-x-generic.png") no-repeat scroll left center;
+}
+
 /**
  * Typography
  *
@@ -677,10 +685,14 @@ div.toc-filter-content h3 {
   background: transparent url("../images/light-grey-chevron.png") no-repeat scroll right center;
   padding-right: 0.3em;
 }
-#main .pane-block li a[href^="https://transact.ppsr.gov.au/"],
-#main .pane-views li a[href^="https://transact.ppsr.gov.au/"] {
+#main .pane-block li a[href^="https://transact"],
+#main .pane-views li a[href^="https://transact"] {
   background: transparent url("../images/register-icon-green.png") no-repeat scroll right center / 20px auto;
   padding-right: 0.3em;
+}
+.field-name-body a[href^="https://transact"] {
+  padding-left: 1.2em;
+  background: transparent url("../images/register-icon-green.png") no-repeat scroll left center / 16px auto;
 }
 .pane-block h2 a, .pane-views h2 a,
 .front .pane-latest-news h2 a {

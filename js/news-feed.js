@@ -12,9 +12,9 @@ function displayfeed(result){
     var thefeeds=result.feed.entries;
     for (var i=0; i<thefeeds.length; i++){
         var mstring=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        var dstring=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        var dstring=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Undefined'];
         var entrydate=new Date(thefeeds[i].publishedDate); //get date of entry
-        var entrydatestr=' '+dstring[entrydate.getDay()-1]+", "+entrydate.getDate()+" "+mstring[entrydate.getMonth()]+" "+entrydate.getFullYear();
+        var entrydatestr=' '+dstring[entrydate.getDay()]+", "+entrydate.getDate()+" "+mstring[entrydate.getMonth()]+" "+entrydate.getFullYear();
         rssoutput+="<h3><a href='" + thefeeds[i].link + "'>" + thefeeds[i].title + "</a> <span style='font-size:.6em;color:#454B56;'>"+entrydatestr+"</span></h3><p>" + thefeeds[i].content + "</p>";
         }
     feedcontainer.innerHTML=rssoutput;

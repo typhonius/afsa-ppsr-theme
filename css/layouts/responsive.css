@@ -195,6 +195,51 @@
   .inside {
     margin: .4em 0 !important;
   }
+/* Homepage blue boxes background */
+  .front.not-logged-in .center-wrapper .panel-col .pane-block:first-child,
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:first-child .pane-block {
+    background-image: url('../../images/help-icon-white.png');
+    background-image: url('../../images/help-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/help-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/help-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/help-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 124% -90%;
+  }
+  .front.not-logged-in .center-wrapper .panel-col .pane-block:nth-child(2),
+  .front.logged-in .center-wrapper .panel-col .panels-ipe-portlet-wrapper:nth-child(2) .pane-block {
+    background-image: url('../../images/migrated-registration-icon-white.png');
+    background-image: url('../../images/migrated-registration-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/migrated-registration-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/migrated-registration-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/migrated-registration-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right 30%;
+  }
+  .front.not-logged-in .center-wrapper .panel-col-last .pane-block:first-child,
+  .front.logged-in .center-wrapper .panel-col-last .panels-ipe-portlet-wrapper:first-child .pane-block {
+    background-image: url('../../images/create-registration-icon-white.png');
+    background-image: url('../../images/create-registration-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/create-registration-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/create-registration-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/create-registration-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+  }
+  .front.not-logged-in .center-wrapper .panel-col-last .pane-block:nth-child(2),
+  .front.logged-in .center-wrapper .panel-col-last .panels-ipe-portlet-wrapper:nth-child(2) .pane-block {
+    background-image: url('../../images/car-icon-white.png');
+    background-image: url('../../images/car-icon-white.png'), -webkit-linear-gradient(left bottom, #A2C3CA, #DAF0F6); /* For Safari */
+    background-image: url('../../images/car-icon-white.png'), -o-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/car-icon-white.png'), -moz-linear-gradient(top right, #A2C3CA, #DAF0F6); /* For Opera */
+    background-image: url('../../images/car-icon-white.png'), linear-gradient(to top right, #A2C3CA, #DAF0F6); /* Standard syntax (must be LAST) */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+  }
 }
 
 /* Footer region */
@@ -219,8 +264,6 @@
     margin-top: 1em;
   }
 }
-
-
 
 /**
  * Use 5 grid columns for larger screens.
